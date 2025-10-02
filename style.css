@@ -321,3 +321,38 @@
 .problems-section button:hover {
   background-color: rgb(198, 198, 198); /* darker hover */
 }
+
+/** Study Section */
+.study-section {
+  background-color: #5c633a; /* custom green background */
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.study-section .main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.study-section img {
+  height: 450px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.study-section .text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.study-section .text-container p {
+  font-size: 30px;
+  font-weight: 800; /* bolder */
+  line-height: 1.8; /* more line height */
+}
