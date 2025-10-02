@@ -97,12 +97,21 @@
   justify-content: space-evenly;
   flex-direction: column;
 }
+.common-traps-section .text-container h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 .common-traps-section .text-container p {
   margin-bottom: 10px;
-
+  font-size: 18px;
 }
 .common-traps-section button {
   width: 75%;
   background-color: rgb(18, 82, 135);
   color: white;
+}
+.common-traps-section li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 18px;
 }
