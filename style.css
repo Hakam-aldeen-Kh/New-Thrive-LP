@@ -8,6 +8,7 @@
 :root {
   --orange-brand: #a6531c;
   --linen: #d4bc8c;
+  --brown-brand: #483c23;
 }
 
 /** container  */
@@ -190,4 +191,84 @@
 .caption .italic {
   font-style: italic;
   font-weight: 700; /* make italic part strong too */
+}
+
+/** Problems Traps */
+.problems-section {
+  background-color: var(--brown-brand); /* brand background */
+  padding: 60px 20px; /* spacing for breathing room */
+  color: #fff; /* make text white for contrast */
+}
+
+.problems-section .main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px; /* spacing between image and text */
+  flex-wrap: wrap; /* responsive stacking */
+}
+
+.problems-section img {
+  height: 450px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 12px; /* optional: softer look */
+}
+
+.problems-section .text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.problems-section .text-container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.problems-section .text-container p,
+.problems-section li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.problems-section li {
+  list-style: none; /* remove default bullet */
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 28px; /* space for arrow */
+}
+
+.problems-section li::before {
+  content: "➔"; /* right arrow */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff; /* arrow color (same as text) */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.problems-section button {
+  width: fit-content;
+  padding: 12px 24px;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 9999px; /* pill style */
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.problems-section button:hover {
+  background-color: rgb(198, 198, 198); /* darker hover */
 }
