@@ -115,3 +115,79 @@
   line-height: 1.5;
   font-size: 18px;
 }
+
+/** Tokyo Image */
+/* Container + image */
+.tokyo-image {
+  position: relative; /* needed so overlay & caption position relative to this */
+  width: 100%;
+  overflow: hidden;
+  /* optional: set a min-height so the section looks nice on short pages */
+  min-height: 380px;
+}
+
+.tokyo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crop nicely while filling the container */
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Overlay sits above the image but below the text */
+.overlap {
+  position: absolute;
+  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0; */
+  background: rgba(0, 0, 0, 0.45); /* semi-transparent dark overlay */
+  z-index: 2;
+  pointer-events: none; /* so clicks pass through if needed */
+}
+
+/* Centered caption */
+.caption {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem; /* safe padding on small screens */
+  text-align: center;
+}
+
+/* Paragraph styling — big, responsive, and with outlined letters */
+/* Paragraph styling — bigger, bolder, and with more spacing */
+.caption p {
+  margin: 0;
+  color: #fff;
+  font-weight: 800; /* bolder */
+  font-size: clamp(1.75rem, 4vw, 3rem); /* bigger text */
+  line-height: 1.6; /* more breathing room */
+  max-width: 1000px;
+  letter-spacing: 0.5px;
+
+  /* outlined letters */
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.95);
+  text-stroke: 1px rgba(0, 0, 0, 0.95);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.95), 1px -1px 0 rgba(0, 0, 0, 0.95),
+    -1px 1px 0 rgba(0, 0, 0, 0.95), 1px 1px 0 rgba(0, 0, 0, 0.95);
+}
+
+/* Underline only for the highlighted phrase */
+.caption .highlight {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  text-decoration-color: #fff; /* make underline white */
+  font-weight: 900;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.95);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.95), 1px -1px 0 rgba(0, 0, 0, 0.95),
+    -1px 1px 0 rgba(0, 0, 0, 0.95), 1px 1px 0 rgba(0, 0, 0, 0.95);
+}
+
+/* Italic span */
+.caption .italic {
+  font-style: italic;
+  font-weight: 700; /* make italic part strong too */
+}
