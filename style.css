@@ -85,36 +85,85 @@
   color: black;
 }
 
-/** Common Traps*/
+/** Common Traps */
+.common-traps-section {
+  background-color: #fff; /* keep original white background */
+  padding: 60px 20px; /* spacing like problems section */
+  color: #000; /* dark text for contrast */
+}
+
 .common-traps-section .main-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 40px; /* spacing between image and text */
+  flex-wrap: wrap; /* responsive stacking */
 }
+
 .common-traps-section img {
   height: 450px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 12px; /* consistent with problems section */
 }
+
 .common-traps-section .text-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
+  flex: 1;
 }
+
 .common-traps-section .text-container h2 {
-  font-size: 30px;
+  font-size: 36px;
   margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 1.3;
 }
+
 .common-traps-section .text-container p {
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  color: #333; /* slightly softer than pure black */
 }
-.common-traps-section button {
-  width: 75%;
-  background-color: rgb(18, 82, 135);
-  color: white;
-}
+
 .common-traps-section li {
-  margin-bottom: 10px;
-  line-height: 1.5;
+  list-style: none; /* remove default bullet */
+  margin-bottom: 12px;
   font-size: 18px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 28px; /* space for arrow */
+}
+
+.common-traps-section li::before {
+  content: "➔"; /* right arrow for consistency */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgb(18, 82, 135); /* brand blue accent */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.common-traps-section button {
+  width: fit-content;
+  padding: 12px 24px;
+  background-color: rgb(18, 82, 135); /* keep brand blue */
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 9999px; /* pill style */
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.common-traps-section button:hover {
+  background-color: rgb(12, 60, 100); /* darker hover */
 }
 
 /** Tokyo Image */
