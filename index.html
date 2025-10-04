@@ -639,8 +639,110 @@
       </div>
     </div>
 
+    <!-- speaking section -->
+    <section class="tij-speaking-sessions">
+      <!-- Background Elements -->
+      <div class="tij-ss-bg-elements">
+        <div class="tij-ss-grid-pattern"></div>
+        <div class="tij-ss-sakura"></div>
+        <div class="tij-ss-sakura"></div>
+        <div class="tij-ss-sakura"></div>
+        <div class="tij-ss-sakura"></div>
+        <div class="tij-ss-sakura"></div>
+        <div class="tij-ss-kanji-bg tij-ss-kanji-1">話</div>
+        <div class="tij-ss-kanji-bg tij-ss-kanji-2">語</div>
+        <div class="tij-ss-kanji-bg tij-ss-kanji-3">学</div>
+        <div class="tij-ss-kanji-bg tij-ss-kanji-4">会</div>
+      </div>
+
+      <!-- Section Header -->
+      <div class="tij-ss-header">
+        <h2 class="tij-ss-title">Weekly Speaking Session Schedule</h2>
+      </div>
+
+      <!-- Content Container -->
+      <div class="tij-ss-container">
+        <!-- Key Features -->
+        <div class="tij-ss-features">
+          <div class="tij-ss-feature-card">
+            <div class="tij-ss-feature-icon">⏰</div>
+            <h3 class="tij-ss-feature-title">Convenient Times</h3>
+            <p class="tij-ss-feature-text">
+              Speaking Sessions held at conveninent times throughout the week
+            </p>
+          </div>
+          <div class="tij-ss-feature-card">
+            <div class="tij-ss-feature-icon">60</div>
+            <h3 class="tij-ss-feature-title">60 Minute Sessions</h3>
+            <p class="tij-ss-feature-text">Full hour of immersive practice</p>
+          </div>
+          <div class="tij-ss-feature-card">
+            <div class="tij-ss-feature-icon">6</div>
+            <h3 class="tij-ss-feature-title">Small Groups</h3>
+            <p class="tij-ss-feature-text">Maximum 6 students per session</p>
+          </div>
+          <div class="tij-ss-feature-card">
+            <div class="tij-ss-feature-icon">2+</div>
+            <h3 class="tij-ss-feature-title">Flexible Booking</h3>
+            <p class="tij-ss-feature-text">
+              Book 2 sessions at a time, unlimited total
+            </p>
+          </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div class="tij-ss-pricing">
+          <div class="tij-ss-pricing-wrapper">
+            <div class="tij-ss-pricing-bg-accent"></div>
+            <div class="tij-ss-pricing-bg-accent"></div>
+
+            <div class="tij-ss-pricing-header">
+              <h3 class="tij-ss-pricing-title">
+                Investment in Your Japanese Journey
+              </h3>
+              <p class="tij-ss-pricing-subtitle">
+                Choose the plan that works best for you
+              </p>
+            </div>
+
+            <div class="tij-ss-pricing-cards">
+              <div class="tij-ss-price-card">
+                <div class="tij-ss-discount-badge">30% OFF</div>
+                <div class="tij-ss-price-period">Monthly</div>
+                <div class="tij-ss-price-amount original">200</div>
+                <div class="tij-ss-price-amount">140</div>
+                <div class="tij-ss-price-currency">USD per month</div>
+              </div>
+
+              <div class="tij-ss-price-card featured">
+                <div class="tij-ss-discount-badge">30% OFF</div>
+                <div class="tij-ss-price-period">Annual</div>
+                <div class="tij-ss-price-amount original">2000</div>
+                <div class="tij-ss-price-amount">1400</div>
+                <div class="tij-ss-price-currency">USD per year</div>
+                <div class="tij-ss-price-savings">
+                  Save $1000 with annual plan!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        /* ================
+     Utility: ensure style once
+     ================ */
+        function ensureStyle(id, css) {
+          if (!document.getElementById(id)) {
+            const s = document.createElement("style");
+            s.id = id;
+            s.textContent = css;
+            document.head.appendChild(s);
+          }
+        }
+
         /* =========================
      FAQ: toggle, ripple, tilt
      ========================= */
@@ -648,124 +750,121 @@
           const faqWrapper = document.querySelector(".tij-faq-wrapper");
           const faqItems = document.querySelectorAll(".tij-faq-item");
 
-          if (faqWrapper && faqItems.length) {
-            // Intersection Observer for FAQ section reveal
-            const sectionObserver = new IntersectionObserver(
-              (entries) => {
-                entries.forEach((entry) => {
-                  if (entry.isIntersecting)
-                    entry.target.classList.add("in-view");
-                });
-              },
-              {
-                threshold: 0.1,
-                rootMargin: "0px 0px -100px 0px",
-              }
-            );
+          if (!faqWrapper || faqItems.length === 0) return;
 
-            sectionObserver.observe(faqWrapper);
-
-            // Ripple keyframes style (only add once)
-            if (!document.getElementById("tij-ripple-style")) {
-              const style = document.createElement("style");
-              style.id = "tij-ripple-style";
-              style.textContent = `
-          @keyframes tijRippleExpand { to { transform: scale(4); opacity: 0; } }
-          .tij-ripple-elm { position: absolute; border-radius: 50%; pointer-events: none; transform: scale(0); animation: tijRippleExpand 0.6s ease-out; background: rgba(255,255,255,0.5); }
-        `;
-              document.head.appendChild(style);
+          // Intersection Observer for FAQ section reveal
+          const sectionObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) entry.target.classList.add("in-view");
+              });
+            },
+            {
+              threshold: 0.1,
+              rootMargin: "0px 0px -100px 0px",
             }
+          );
+          sectionObserver.observe(faqWrapper);
 
-            // FAQ item behavior
-            faqItems.forEach((item) => {
-              const question = item.querySelector(".tij-faq-question");
+          // Add ripple keyframes + base class once
+          ensureStyle(
+            "tij-ripple-style",
+            `
+      @keyframes tijRippleExpand { to { transform: scale(4); opacity: 0; } }
+      .tij-ripple-elm { position: absolute; border-radius: 50%; pointer-events: none; transform: scale(0); animation: tijRippleExpand 0.6s ease-out; background: rgba(255,255,255,0.5); }
+    `
+          );
 
-              if (!question) return;
+          faqItems.forEach((item) => {
+            const question = item.querySelector(".tij-faq-question");
+            if (!question) return;
 
-              // Click and keyboard (Enter / Space) handling
-              question.addEventListener("click", function (ev) {
+            // Click
+            question.addEventListener("click", function (ev) {
+              toggleFaqItem(item, ev);
+            });
+
+            // Keyboard support: Enter / Space
+            question.addEventListener("keydown", function (ev) {
+              if (ev.key === "Enter" || ev.key === " ") {
+                ev.preventDefault();
                 toggleFaqItem(item, ev);
-              });
+              }
+            });
 
-              question.addEventListener("keydown", function (ev) {
-                if (ev.key === "Enter" || ev.key === " ") {
-                  ev.preventDefault();
-                  toggleFaqItem(item, ev);
-                }
-              });
+            // Hover tilt for each FAQ item
+            item.addEventListener("mousemove", function (e) {
+              const rect = item.getBoundingClientRect();
+              const x = e.clientX - rect.left;
+              const y = e.clientY - rect.top;
+              const centerX = rect.width / 2;
+              const centerY = rect.height / 2;
+              const rotateX = (y - centerY) / 20;
+              const rotateY = (centerX - x) / 20;
+              item.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;
+            });
 
-              // Hover tilt effect per item
-              item.addEventListener("mousemove", function (e) {
-                const rect = item.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                const rotateX = (y - centerY) / 20;
-                const rotateY = (centerX - x) / 20;
-                item.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;
-              });
+            item.addEventListener("mouseleave", function () {
+              item.style.transform =
+                "perspective(1000px) rotateX(0) rotateY(0) translateY(0)";
+            });
+          }); // faqItems.forEach
 
-              item.addEventListener("mouseleave", function () {
-                item.style.transform =
-                  "perspective(1000px) rotateX(0) rotateY(0) translateY(0)";
-              });
-            }); // faqItems.forEach
+          function toggleFaqItem(item, ev) {
+            const isActive = item.classList.contains("tij-active");
 
-            function toggleFaqItem(item, ev) {
-              const isActive = item.classList.contains("tij-active");
+            // Close all
+            faqItems.forEach((other) => other.classList.remove("tij-active"));
 
-              // Close all
-              faqItems.forEach((other) => other.classList.remove("tij-active"));
-
-              if (!isActive) {
-                item.classList.add("tij-active");
-
-                // create ripple if we have an event and target is clickable element
-                const question = item.querySelector(".tij-faq-question");
-                try {
-                  createRipple(question, ev);
-                } catch (err) {
-                  // fallback: no ripple
-                }
+            if (!isActive) {
+              item.classList.add("tij-active");
+              // ripple (if event available)
+              const question = item.querySelector(".tij-faq-question");
+              try {
+                createRipple(question, ev);
+              } catch (e) {
+                /* noop */
               }
             }
+          }
 
-            function createRipple(element, ev) {
-              if (!element) return;
-              const ripple = document.createElement("span");
-              ripple.className = "tij-ripple-elm";
+          function createRipple(element, ev) {
+            if (!element) return;
+            const ripple = document.createElement("span");
+            ripple.className = "tij-ripple-elm";
 
-              const rect = element.getBoundingClientRect();
-              const size = Math.max(rect.width, rect.height);
-              let clientX =
-                ev && ev.clientX ? ev.clientX : rect.left + rect.width / 2;
-              let clientY =
-                ev && ev.clientY ? ev.clientY : rect.top + rect.height / 2;
-              const x = clientX - rect.left - size / 2;
-              const y = clientY - rect.top - size / 2;
+            const rect = element.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            let clientX =
+              ev && ev.clientX ? ev.clientX : rect.left + rect.width / 2;
+            let clientY =
+              ev && ev.clientY ? ev.clientY : rect.top + rect.height / 2;
+            const x = clientX - rect.left - size / 2;
+            const y = clientY - rect.top - size / 2;
 
-              ripple.style.width = ripple.style.height = size + "px";
-              ripple.style.left = x + "px";
-              ripple.style.top = y + "px";
-              element.style.position = element.style.position || "relative";
-              element.appendChild(ripple);
+            ripple.style.width = ripple.style.height = size + "px";
+            ripple.style.left = x + "px";
+            ripple.style.top = y + "px";
+            // ensure position for parent
+            if (getComputedStyle(element).position === "static")
+              element.style.position = "relative";
+            element.appendChild(ripple);
 
-              setTimeout(() => ripple.remove(), 650);
-            }
+            setTimeout(() => ripple.remove(), 650);
+          }
 
-            // Respect reduced motion preference
-            if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-              faqItems.forEach((i) => (i.style.transition = "none"));
-            }
-          } // if faq exist
-        })();
+          // Respect reduced motion
+          if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            faqItems.forEach((i) => (i.style.transition = "none"));
+          }
+        })(); // FAQModule end
 
         /* ===================================
-     Particles, parallax, reveal, members
+     ATeam: particles, parallax, reveal,
+     member tilt, glitch
      =================================== */
         (function ATeamModule() {
-          // Particles
+          // Particles container
           const particlesContainer = document.getElementById("ateamParticles");
           if (particlesContainer) {
             function createParticle() {
@@ -776,46 +875,23 @@
               particle.style.animationDuration = 10 + Math.random() * 10 + "s";
               particlesContainer.appendChild(particle);
 
-              // auto remove
               setTimeout(() => {
                 if (particle.parentNode) particle.remove();
               }, 20000);
             }
 
-            // interval + initial burst
             const particleInterval = setInterval(createParticle, 500);
-            for (let i = 0; i < 20; i++) {
-              setTimeout(createParticle, i * 200);
-            }
+            for (let i = 0; i < 20; i++) setTimeout(createParticle, i * 200);
 
-            // optional: clear interval on page unload
+            // clean up interval on unload
             window.addEventListener("beforeunload", () =>
               clearInterval(particleInterval)
             );
           }
 
-          // Parallax for floating kanji
-          let ticking = false;
-          function updateParallax() {
-            if (!ticking) {
-              window.requestAnimationFrame(() => {
-                const scrolled =
-                  window.pageYOffset || document.documentElement.scrollTop;
-                const kanjis = document.querySelectorAll(".floating-kanji");
-                kanjis.forEach((kanji, index) => {
-                  const speed = 0.5 + index * 0.1;
-                  kanji.style.transform = `translateY(${
-                    scrolled * speed * 0.1
-                  }px)`;
-                });
-                ticking = false;
-              });
-              ticking = true;
-            }
-          }
-          window.addEventListener("scroll", updateParallax);
+          // Parallax update will be shared — see SharedParallax below
 
-          // Intersection Observer for reveal animations
+          // Reveal observer
           const revealElements = document.querySelectorAll(
             ".ateam-header, .ateam-intro, .ateam-member, .ateam-message"
           );
@@ -825,30 +901,24 @@
                 entries.forEach((entry) => {
                   if (entry.isIntersecting) {
                     entry.target.classList.add("reveal-active");
-
-                    // stagger for members
                     if (entry.target.classList.contains("ateam-member")) {
                       const members =
                         document.querySelectorAll(".ateam-member");
                       members.forEach((member, index) => {
-                        if (member === entry.target) {
+                        if (member === entry.target)
                           member.style.animationDelay = `${index * 0.2}s`;
-                        }
                       });
                     }
                   }
                 });
               },
-              {
-                threshold: 0.1,
-                rootMargin: "0px 0px -50px 0px",
-              }
+              { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
             );
 
             revealElements.forEach((el) => revealObserver.observe(el));
           }
 
-          // Mouse move tilt on .ateam-member
+          // member card tilt
           const memberCards = document.querySelectorAll(".ateam-member");
           memberCards.forEach((card) => {
             card.addEventListener("mousemove", (e) => {
@@ -867,7 +937,7 @@
             });
           });
 
-          // Glitch hover on member names
+          // glitch hover for member names
           const memberNames = document.querySelectorAll(".ateam-name");
           memberNames.forEach((name) => {
             name.addEventListener("mouseenter", function () {
@@ -878,22 +948,189 @@
             });
           });
 
-          // Add glitch keyframes once
-          if (!document.getElementById("tij-glitch-style")) {
-            const glitchStyle = document.createElement("style");
-            glitchStyle.id = "tij-glitch-style";
-            glitchStyle.textContent = `
-        @keyframes glitchText {
-          0%, 100% { transform: translate(0); }
-          20% { transform: translate(-2px, 2px); }
-          40% { transform: translate(-2px, -2px); }
-          60% { transform: translate(2px, 2px); }
-          80% { transform: translate(2px, -2px); }
-        }
-      `;
-            document.head.appendChild(glitchStyle);
-          }
+          // add glitch keyframes once
+          ensureStyle(
+            "tij-glitch-style",
+            `
+      @keyframes glitchText {
+        0%,100% { transform: translate(0); }
+        20% { transform: translate(-2px, 2px); }
+        40% { transform: translate(-2px, -2px); }
+        60% { transform: translate(2px, 2px); }
+        80% { transform: translate(2px, -2px); }
+      }
+    `
+          );
         })(); // ATeamModule end
+
+        /* ===================================================
+     Shared Parallax + Smooth Scroll + Day-cards + SSI
+     (This consolidates scroll, mousemove, and observers)
+     =================================================== */
+        (function SharedParallaxAndSSModule() {
+          // ----- Smooth scroll for CTA (defensive) -----
+          const cta = document.querySelector(".tij-promo-cta");
+          if (cta) {
+            cta.addEventListener("click", function (e) {
+              // support anchor w/out href safely
+              const href = this.getAttribute("href");
+              if (!href) return;
+              e.preventDefault();
+              const target = document.querySelector(href);
+              if (target) {
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            });
+          }
+
+          // ----- Intersection observer for ss elements (features/pricing/day/info) -----
+          const observerOptions = {
+            threshold: 0.2,
+            rootMargin: "0px 0px -50px 0px",
+          };
+          const ssObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+              }
+            });
+          }, observerOptions);
+
+          const elementsToObserve = document.querySelectorAll(
+            ".tij-ss-features, .tij-ss-pricing, .tij-ss-day-card, .tij-ss-info-section"
+          );
+          elementsToObserve.forEach((el) => ssObserver.observe(el));
+
+          // ----- Parallax: consolidated update (used by both ATeam and SS modules) -----
+          let ticking = false;
+          function updateParallax() {
+            const scrolled =
+              window.pageYOffset || document.documentElement.scrollTop;
+
+            // grid pattern
+            const grid = document.querySelector(".tij-ss-grid-pattern");
+            if (grid)
+              grid.style.transform = `translate(${scrolled * 0.1}px, ${
+                scrolled * 0.1
+              }px)`;
+
+            // kanji backgrounds for SS
+            const kanjis = document.querySelectorAll(".tij-ss-kanji-bg");
+            if (kanjis.length) {
+              kanjis.forEach((kanji, index) => {
+                const speed = 0.05 * (index + 1);
+                kanji.style.transform = `translateY(${scrolled * speed}px)`;
+              });
+            }
+
+            // floating-kanji used in ATeam module too
+            const floatingKanjis = document.querySelectorAll(".floating-kanji");
+            if (floatingKanjis.length) {
+              floatingKanjis.forEach((kanji, index) => {
+                const speed = 0.5 + index * 0.1;
+                kanji.style.transform = `translateY(${
+                  scrolled * speed * 0.1
+                }px)`;
+              });
+            }
+
+            ticking = false;
+          }
+
+          function requestTick() {
+            if (!ticking) {
+              window.requestAnimationFrame(updateParallax);
+              ticking = true;
+            }
+          }
+          window.addEventListener("scroll", requestTick);
+
+          // ----- Mouse move effects: Japanese accents (SS) -----
+          document.addEventListener("mousemove", (e) => {
+            const mouseX = e.clientX / window.innerWidth;
+            const mouseY = e.clientY / window.innerHeight;
+
+            const accents = document.querySelectorAll(".tij-ss-day-japanese");
+            if (accents.length) {
+              accents.forEach((accent, index) => {
+                const speed = 10;
+                const x = (mouseX - 0.5) * speed * (index % 2 === 0 ? 1 : -1);
+                const y = (mouseY - 0.5) * speed * (index % 2 === 0 ? -1 : 1);
+                accent.style.transform = `translate(${x}px, ${y}px)`;
+              });
+            }
+          });
+
+          // ----- Day-cards ripple on hover (SS) -----
+          const dayCards = document.querySelectorAll(".tij-ss-day-card");
+          if (dayCards.length) {
+            // ensure cardRipple keyframes inserted once
+            ensureStyle(
+              "tij-cardripple-style",
+              `
+        @keyframes cardRipple {
+          to { transform: translate(-50%, -50%) scale(8); opacity: 0; }
+        }
+      `
+            );
+
+            dayCards.forEach((card) => {
+              // ensure card is positioned relatively for absolute ripple
+              if (getComputedStyle(card).position === "static")
+                card.style.position = "relative";
+              card.addEventListener("mouseenter", function (e) {
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const ripple = document.createElement("div");
+                ripple.style.cssText = `
+            position: absolute;
+            background: radial-gradient(circle, rgba(212,188,140,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            top: ${y}px;
+            left: ${x}px;
+            transform: translate(-50%, -50%) scale(0);
+            pointer-events: none;
+            z-index: 0;
+            animation: cardRipple 0.8s ease-out forwards;
+          `;
+                this.appendChild(ripple);
+                setTimeout(() => {
+                  if (ripple.parentNode) ripple.remove();
+                }, 800);
+              });
+            });
+          }
+
+          // ----- Feature cards initial animation delays -----
+          const featureCards = document.querySelectorAll(
+            ".tij-ss-feature-card"
+          );
+          if (featureCards.length) {
+            featureCards.forEach((card, index) => {
+              card.style.animationDelay = `${index * 0.1}s`;
+            });
+          }
+
+          // ----- Price cards entrance animation on load -----
+          const priceCards = document.querySelectorAll(".tij-ss-price-card");
+          if (priceCards.length) {
+            priceCards.forEach((card, index) => {
+              card.style.opacity = "0";
+              card.style.transform = "translateY(30px)";
+              setTimeout(() => {
+                card.style.transition =
+                  "all 0.6s cubic-bezier(0.16, 1, 0.3, 1)";
+                card.style.opacity = "1";
+                card.style.transform = "translateY(0)";
+              }, 800 + index * 200);
+            });
+          }
+        })(); // SharedParallaxAndSSModule end
       }); // DOMContentLoaded
     </script>
   </body>
