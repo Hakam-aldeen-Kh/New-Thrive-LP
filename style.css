@@ -9,6 +9,7 @@
   --orange-brand: #a6531c;
   --linen: #d4bc8c;
   --brown-brand: #483c23;
+  --yellow-brand: #ff9040;
 }
 
 /** container  */
@@ -355,4 +356,69 @@
   font-size: 30px;
   font-weight: 800; /* bolder */
   line-height: 1.8; /* more line height */
+}
+
+/** Program Feature Section */
+.program-features-section {
+  background-color: white; /* brand background */
+  padding: 60px 20px; /* spacing for breathing room */
+  color: black; /* make text white for contrast */
+}
+
+.program-features-section .main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px; /* spacing between image and text */
+  flex-wrap: wrap; /* responsive stacking */
+}
+
+.program-features-section img {
+  height: 450px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 12px; /* optional: softer look */
+}
+
+.program-features-section .text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex:0.9
+}
+
+.program-features-section .text-container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.program-features-section .text-container p,
+.program-features-section li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.program-features-section li {
+  margin-left: 20px;
+}
+
+.program-features-section button {
+  width: fit-content;
+  padding: 12px 24px;
+  background-color: var(--yellow-brand);
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 9999px; /* pill style */
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.program-features-section button:hover {
+  background-color: #fd7413; /* darker hover */
 }
