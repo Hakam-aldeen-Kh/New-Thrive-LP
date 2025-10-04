@@ -1,1137 +1,2503 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Thrive In Japan</title>
-  </head>
-  <body>
-    <!-- Hero Section -->
-    <div class="hero-section">
-      <span class="hero-title">Thrive in Japan</span>
-      <div class="main-text">Don’t study Japanese. Live it.</div>
-      <div class="sub-section">
-        <p>
-          Our original program is designed to get you to cultural and linguistic
-          fluency as quickly and efficiently as possible.
-        </p>
-        <button class="btn">I’m ready to sign up now</button>
-        <span>more details below</span>
-      </div>
-    </div>
-    <!-- Common Traps Section -->
-    <div class="common-traps-section">
-      <div class="container">
-        <div class="main-container">
-          <img src="/assets/common.png" alt="Common Traps image" />
-          <div class="text-container">
-            <h2>We save students from these common traps-</h2>
-            <div class="list">
-              <p>“I studied Japanese and came to Japan but. . .”</p>
-              <ul>
-                <li>
-                  I can’t escape my foreigner-only circles and make Japanese
-                  friends.
-                </li>
-                <li>
-                  The only job I can get is as an English Teacher, but I’m not a
-                  teacher!
-                </li>
-                <li>
-                  I don’t understand Japanese Culture, so I am always causing
-                  problems.
-                </li>
-                <li>
-                  I’m not thriving, I’m barely surviving. I want to leave Japan,
-                  help!
-                </li>
-              </ul>
-            </div>
-            <button class="btn">I’m ready to sign up now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Tokyo -->
-    <div class="tokyo-image">
-      <img src="/assets/tokyo-image.jpg" alt="tokyo image" />
-      <div class="overlap"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <title>Thrive In Japan - Complete</title>
+  <style>
+    /* ==========================================
+       CSS VARIABLES - 5 COLOR PALETTE
+    ========================================== */
+    :root {
+      --color-linen: #d4bc8c;
+      --color-green: #5c633a;
+      --color-brown: #483c23;
+      --color-black: #0a0a0a;
+      --color-white: #ffffff;
+    }
 
-      <div class="caption">
-        <p class="outlined">
-          We teach you what you actually need to know, and we show what it takes
-          to <span class="highlight">Thrive in Japan</span>. We can do this
-          <span class="italic">because we’ve done it ourselves.</span>
-        </p>
-      </div>
-    </div>
-    <!-- Common Traps Section -->
-    <div class="problems-section">
-      <div class="container">
-        <div class="main-container">
-          <img src="/assets/common.png" alt="Common Traps image" />
-          <div class="text-container">
-            <h2>Problems with other Japanese programs. . .</h2>
-            <div class="list">
-              <ul>
-                <li>Limited time to actually practice speaking.</li>
-                <li>No schedule flexibility.</li>
-                <li>
-                  Programs are geared to pass the JLPT test, but not to actually
-                  communicate in Japanese.
-                </li>
-                <li>
-                  Only the literal meaning of words is taught, when the Japanese
-                  Language is between 60-80% contextual.
-                </li>
-                <li>
-                  Everywhere uses the same books: Genki, Minna no Nihongo, etc.
-                  but obviously it’s not working.
-                </li>
-              </ul>
-            </div>
-            <button class="btn">Show me the Solution!</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Study Section -->
-    <div class="study-section">
-      <div class="container">
-        <div class="main-container">
-          <div class="text-container">
-            <p>
-              Study whenever you want. <br />
-              Speak as much as you want. <br />
-              When all you have is “right now” <br />
-              Thrive in Japan is here for you.
-            </p>
-          </div>
-          <img src="/assets/common.png" alt="Study in Japan" />
-        </div>
-      </div>
-    </div>
-    <!-- Program Feature Section -->
-    <div class="program-features-section">
-      <div class="container">
-        <div class="main-container">
-          <img src="/assets/common.png" alt="Program Feature" />
-          <div class="text-container">
-            <h2>Our Program Features</h2>
-            <div class="list">
-              <ul>
-                <li>1-on-1 Speaking Practice with Native Japanese Speakers</li>
-                <li>Flexible Scheduling to fit your lifestyle</li>
-                <li>Real World Japanese that you can actually use</li>
-                <li>
-                  Cultural Immersion Activities to get you out of your comfort
-                  zone
-                </li>
-                <li>
-                  Community Support from others on the same journey as you
-                </li>
-              </ul>
-            </div>
-            <button class="btn">I’m ready to sign up now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Video Section -->
-    <div class="video-section">
-      <div class="container">
-        <h2>Actually Learn Japanese.</h2>
-        <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/D0UnqGm_miA"
-            title="YouTube video player"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
-      </div>
-    </div>
-    <!-- Steps Section -->
-    <section class="steps-section" aria-labelledby="stepsHeading">
-      <div class="container">
-        <div class="steps-header">
-          <div>
-            <h2 id="stepsHeading">How to Get Started</h2>
-            <p class="steps-sub">
-              Simple, fast and friendly onboarding — get started in minutes.
-            </p>
-          </div>
-          <div>
-            <button class="btn" aria-label="Register free account">
-              Register my FREE account now
-            </button>
-          </div>
-        </div>
-        <div class="grid-steps" role="list">
-          <div
-            class="step"
-            role="listitem"
-            tabindex="0"
-            aria-labelledby="step1title"
-          >
-            <div class="step-visual">
-              <div class="step-number">01</div>
-              <div class="step-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5z"
-                    stroke="currentColor"
-                    stroke-width="1.4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M21 21c0-3.866-3.582-7-9-7s-9 3.134-9 7"
-                    stroke="currentColor"
-                    stroke-width="1.4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="step-content">
-              <h3 id="step1title" class="step-title">
-                Sign up for a FREE account
-              </h3>
-              <p class="step-desc">
-                Create your account using email or continue with Google — no
-                credit card required.
-              </p>
-            </div>
-          </div>
+    /* ==========================================
+       GLOBAL RESET & BASE STYLES
+    ========================================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-          <div
-            class="step"
-            role="listitem"
-            tabindex="0"
-            aria-labelledby="step2title"
-          >
-            <div class="step-visual">
-              <div class="step-number">02</div>
-              <div class="step-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 3l7 4.5v5.5c0 5-3.582 8-7 8s-7-3-7-8V7.5L12 3z"
-                    stroke="currentColor"
-                    stroke-width="1.3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="step-content">
-              <h3 id="step2title" class="step-title">2‑week Risk Free Trial</h3>
-              <p class="step-desc">
-                Try all premium features for 14 days. Cancel anytime — no
-                surprises.
-              </p>
-            </div>
-          </div>
+    body {
+      background: var(--color-white);
+      overflow-x: hidden;
+    }
 
-          <div
-            class="step"
-            role="listitem"
-            tabindex="0"
-            aria-labelledby="step3title"
-          >
-            <div class="step-visual">
-              <div class="step-number">03</div>
-              <div class="step-icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2l2.5 4.5L19 8l-4 3 1 5-4.5-2.5L8 16l1-5-4-3 4.5-1.5L12 2z"
-                    stroke="currentColor"
-                    stroke-width="1.1"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="step-content">
-              <h3 id="step3title" class="step-title">
-                Subscribe &amp; get 30% OFF for life*
-              </h3>
-              <p class="step-desc">
-                Lock-in a lifetime discount and support ongoing improvements.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Team Section -->
-    <section class="ateam-section">
-      <!-- Dynamic Background Pattern -->
-      <div class="ateam-bg-pattern"></div>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+    }
 
-      <!-- Floating Kanji Background -->
-      <div class="ateam-kanji-bg">
-        <div class="floating-kanji">魂</div>
-        <div class="floating-kanji">道</div>
-        <div class="floating-kanji">心</div>
-        <div class="floating-kanji">和</div>
-      </div>
+    .btn {
+      border: none;
+      padding: 12px 28px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      border-radius: 9999px;
+      transition: all 0.3s ease;
+    }
 
-      <!-- Particles -->
-      <div class="ateam-particles" id="ateamParticles"></div>
+    /* ==========================================
+       1. HERO SECTION
+    ========================================== */
+    .hero-section {
+      background: url("/assets/Japan-MP.jpg") center/cover;
+      min-height: 100vh;
+      color: var(--color-white);
+      position: relative;
+    }
 
-      <!-- Container -->
-      <div class="ateam-container">
-        <!-- Header -->
-        <div class="ateam-header">
-          <div class="ateam-label">The A-Team</div>
-          <h2 class="ateam-title">Meet the Creators of Thrive in Japan</h2>
-          <p class="ateam-subtitle">The Insiders Who Cracked Japan's Code</p>
-        </div>
+    .hero-section .hero-title {
+      position: absolute;
+      top: 20px;
+      left: 40px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
 
-        <!-- Introduction -->
-        <div class="ateam-intro">
-          <p class="ateam-intro-text">
-            Together, they built the ultimate guide to mastering Japan's silent
-            language—With Thrive in Japan
-            <strong>Learn Japanese</strong>, <strong>Truly belong</strong>,
-            <strong>Live your purpose</strong>.
-          </p>
-        </div>
+    .hero-section .main-text {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      text-align: center;
+      -webkit-text-stroke: 2px var(--color-black);
+      font-size: 4rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
 
-        <!-- Team Grid -->
-        <div class="ateam-grid">
-          <!-- Shige -->
-          <div class="ateam-member">
-            <div class="ateam-image-container">
-              <img
-                src="https://i0.wp.com/thriveinjapan.com/wp-content/uploads/2025/04/prof-at-nihonbashi.jpg?resize=768%2C1024&ssl=1"
-                alt="Shige"
-                class="ateam-image"
-              />
-              <div class="ateam-image-overlay"></div>
-            </div>
-            <div class="ateam-info">
-              <h3 class="ateam-name">Shige</h3>
-              <div class="ateam-role">Japanese Cultural Expert</div>
-              <div class="ateam-title-role">Instructor</div>
-              <p class="ateam-bio">
-                Professional Thriver in Japan. A US expat who came to Japan in
-                2006. After a 25+ year journey to become a world-class
-                traditional Japanese artist and musician, he cracked the code to
-                be accepted, respected and connected in even the most
-                traditional circles in Japan.
-              </p>
-              <div class="ateam-social">
-                <a href="#" class="ateam-social-link" aria-label="Instagram">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="ateam-social-link" aria-label="LinkedIn">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="ateam-social-link" aria-label="X (Twitter)">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
+    .hero-section .sub-section {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: var(--color-linen);
+      min-height: 35vh;
+      color: var(--color-black);
+      font-size: 30px;
+      font-weight: 500;
+      padding: 20px 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
 
-          <!-- Hiro -->
-          <div class="ateam-member">
-            <div class="ateam-image-container">
-              <img
-                src="https://i0.wp.com/thriveinjapan.com/wp-content/uploads/2025/04/iOS-%E3%81%AE%E7%94%BB%E5%83%8F-768x1024.jpg?resize=768%2C1024&ssl=1"
-                alt="Hiro"
-                class="ateam-image"
-              />
-              <div class="ateam-image-overlay"></div>
-            </div>
-            <div class="ateam-info">
-              <h3 class="ateam-name">Hiro</h3>
-              <div class="ateam-role">
-                Japanese/International Business Expert
-              </div>
-              <div class="ateam-title-role">Co-Instructor</div>
-              <p class="ateam-bio">
-                A global business leader who started with a prestigious position
-                at Sumitomo Corporation. As "kikokushijyo" he spent his
-                childhood in New Jersey and is solidly bi-lingual and
-                bi-cultural. He has vast experience leading elite international
-                teams from Japan to Saudi Arabia.
-              </p>
-              <div class="ateam-social">
-                <a href="#" class="ateam-social-link" aria-label="Instagram">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="ateam-social-link" aria-label="LinkedIn">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="ateam-social-link" aria-label="X (Twitter)">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
+    .hero-section .btn {
+      background-color: var(--color-white);
+      color: var(--color-black);
+    }
 
-          <!-- Naoka -->
-          <div class="ateam-member">
-            <div class="ateam-image-container">
-              <img
-                src="https://i0.wp.com/thriveinjapan.com/wp-content/uploads/2025/04/IMG_8536-scaled.jpg?resize=768%2C1024&ssl=1"
-                alt="Naoka"
-                class="ateam-image"
-              />
-              <div class="ateam-image-overlay"></div>
-            </div>
-            <div class="ateam-info">
-              <h3 class="ateam-name">Naoka</h3>
-              <div class="ateam-role">Japanese Service Professional</div>
-              <div class="ateam-title-role">Co-Instructor</div>
-              <p class="ateam-bio">
-                A self-made entrepreneur and certified award-winning Japanese
-                Hospitality Expert consulted by Michelin restaurants throughout
-                Japan and as far as Paris. All contents meet her rigorous
-                standard and guarantee that this isn't just opinion. This is how
-                Japan works.
-              </p>
-              <div class="ateam-social">
-                <a href="#" class="ateam-social-link" aria-label="Instagram">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="ateam-social-link" aria-label="LinkedIn">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                    />
-                  </svg>
-                </a>
-                <a href="#" class="ateam-social-link" aria-label="X (Twitter)">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+    .hero-section .btn:hover {
+      background-color: var(--color-brown);
+      color: var(--color-white);
+    }
 
-        <!-- Bottom Message -->
-        <div class="ateam-message">
-          <p class="ateam-message-text">
-            If you take these lessons to heart, you could become an
-            <em>award winning Japanese Hospitality expert</em> as well!
-          </p>
-        </div>
-      </div>
-    </section>
+    /* ==========================================
+       2. COMMON TRAPS SECTION (LIGHT)
+    ========================================== */
+    .common-traps-section {
+      background-color: var(--color-white);
+      padding: 80px 20px;
+      color: var(--color-black);
+    }
 
-    <!-- FAQ section -->
-    <div class="tij-faq-wrapper">
-      <!-- Background Decoration -->
-      <div class="tij-faq-bg-decoration">
-        <div class="tij-faq-bg-circle"></div>
-        <div class="tij-faq-bg-circle"></div>
-        <div class="tij-faq-bg-circle"></div>
-      </div>
+    .common-traps-section .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
 
-      <!-- Decorative Elements -->
-      <div class="tij-faq-decoration tij-faq-decoration-1">学</div>
-      <div class="tij-faq-decoration tij-faq-decoration-2">問</div>
+    .common-traps-section img {
+      height: 450px;
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+    }
 
-      <div class="tij-faq-container">
-        <!-- Header -->
-        <div class="tij-faq-header">
-          <h2 class="tij-faq-title">Frequently Asked Questions</h2>
-          <p class="tij-faq-subtitle">
-            Everything you need to know about thriving in Japan
-          </p>
-        </div>
+    .common-traps-section .text-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex: 1;
+    }
 
-        <!-- FAQ Items -->
-        <div class="tij-faq-items">
-          <!-- FAQ Item 1 -->
-          <div class="tij-faq-item" style="--item-index: 0">
-            <div class="tij-faq-question">
-              <h3 class="tij-faq-question-text">
-                What is the Thrive in Japan program?
-              </h3>
-              <div class="tij-faq-icon-wrapper">
-                <div class="tij-faq-icon">
-                  <div class="tij-faq-plus"></div>
-                </div>
-              </div>
-            </div>
-            <div class="tij-faq-answer">
-              <div class="tij-faq-answer-content">
-                Thrive in Japan program includes a groundbreaking and original
-                curriculum, unlimited speaking sessions and access to an active
-                community who is committed to helping you thrive in Japan.
-              </div>
-            </div>
-          </div>
+    .common-traps-section .text-container h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-weight: 800;
+      line-height: 1.3;
+      color: var(--color-brown);
+    }
 
-          <!-- FAQ Item 2 -->
-          <div class="tij-faq-item" style="--item-index: 1">
-            <div class="tij-faq-question">
-              <h3 class="tij-faq-question-text">
-                What if I already have JLPT but I still want to learn to Thrive?
-              </h3>
-              <div class="tij-faq-icon-wrapper">
-                <div class="tij-faq-icon">
-                  <div class="tij-faq-plus"></div>
-                </div>
-              </div>
-            </div>
-            <div class="tij-faq-answer">
-              <div class="tij-faq-answer-content">
-                To guarantee that we are creating the type of supportive
-                learning community students need for success we are releasing
-                the program in stages. Currently Thrive in Japan is only
-                available for Absolute beginners and N5 level students.<br />
-                N4 curriculum will be released in November 2025.<br />
-                N3, N2 and N1 programs have planned release dates in 2026.
-              </div>
-            </div>
-          </div>
+    .common-traps-section .text-container p {
+      margin-bottom: 16px;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--color-brown);
+    }
 
-          <!-- FAQ Item 3 -->
-          <div class="tij-faq-item" style="--item-index: 2">
-            <div class="tij-faq-question">
-              <h3 class="tij-faq-question-text">
-                Who can benefit from the Thrive in Japan program?
-              </h3>
-              <div class="tij-faq-icon-wrapper">
-                <div class="tij-faq-icon">
-                  <div class="tij-faq-plus"></div>
-                </div>
-              </div>
-            </div>
-            <div class="tij-faq-answer">
-              <div class="tij-faq-answer-content">
-                Simply put: anyone serious about learning Japanese Language and
-                Culture. If you are currently struggling in Japan, this is for
-                you. If you are planning on coming to Japan, Thrive in Japan
-                will easily shave years off of your learning curve. If you are
-                struggling with a relationship with a Japanese person (whether
-                privately or professionally) then Thrive in Japan will make the
-                difference. If you want to dive deep, then this is the best
-                option on the market today.
-              </div>
-            </div>
-          </div>
+    .common-traps-section li {
+      list-style: none;
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 1.6;
+      position: relative;
+      padding-left: 28px;
+    }
 
-          <!-- FAQ Item 4 -->
-          <div class="tij-faq-item" style="--item-index: 3">
-            <div class="tij-faq-question">
-              <h3 class="tij-faq-question-text">
-                What if I speak advanced Japanese? What if I'm a beginner?
-              </h3>
-              <div class="tij-faq-icon-wrapper">
-                <div class="tij-faq-icon">
-                  <div class="tij-faq-plus"></div>
-                </div>
-              </div>
-            </div>
-            <div class="tij-faq-answer">
-              <div class="tij-faq-answer-content">
-                At the moment Thrive in Japan is only accepting true beginners
-                or N5 level learners. We will be launching more advanced levels
-                in stages starting in November 2025 with N4, and finishing with
-                N1 at the end of 2026. Sign up to our mailing list now to
-                receive updates and make sure you get our special Limited Launch
-                offer when your level is officially announced! Sign up to the
-                Mailing List
-                <a href="https://thriveinjapan.com/contact/" target="_blank">
-                  HERE.</a
-                >
-              </div>
-            </div>
-          </div>
+    .common-traps-section li::before {
+      content: "➔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--color-green);
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-          <!-- FAQ Item 5 -->
-          <div class="tij-faq-item" style="--item-index: 4">
-            <div class="tij-faq-question">
-              <h3 class="tij-faq-question-text">
-                Do you actually teach Japanese Language?
-              </h3>
-              <div class="tij-faq-icon-wrapper">
-                <div class="tij-faq-icon">
-                  <div class="tij-faq-plus"></div>
-                </div>
-              </div>
-            </div>
-            <div class="tij-faq-answer">
-              <div class="tij-faq-answer-content">
-                <strong
-                  >Yes, we do, thrive in Japan is a Japanese Language program
-                  that leaves other programs in the dust.</strong
-                >
-                BUT before we start teaching you the language (no matter how
-                fluent you already are) we encourage that ALL of our students go
-                through “The Paradigm Shift” Course.
+    .common-traps-section button {
+      background-color: var(--color-green);
+      color: var(--color-white);
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 9999px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-                <div class="tij-faq-highlight">
-                  Japanese is at least 60% unspoken communication skills, tools
-                  and strategies. The remaining 40% is made up of words and
-                  grammar structures.
-                </div>
+    .common-traps-section button:hover {
+      background-color: var(--color-brown);
+    }
 
-                Learning Japanese with us is a decision to redefine your terms.
-                What is the Japanese Language? Is it only vocabulary words and
-                grammar? As far as we are concerned, "no" - Our students learn
-                Japanese as a holistic communication SYSTEM. This system cannot
-                be ignored, and Japanese cannot be treated and taught in the
-                same way that other languages are traditionally taught in
-                academic settings. To Thrive in Japan you will need to take a
-                more balanced approach to learning than a simple JLPT course can
-                provide.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    /* ==========================================
+       3. TOKYO IMAGE SECTION
+    ========================================== */
+    .tokyo-image {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      min-height: 380px;
+    }
 
-    <!-- speaking section -->
-    <section class="tij-speaking-sessions">
-      <!-- Background Elements -->
-      <div class="tij-ss-bg-elements">
-        <div class="tij-ss-grid-pattern"></div>
-        <div class="tij-ss-sakura"></div>
-        <div class="tij-ss-sakura"></div>
-        <div class="tij-ss-sakura"></div>
-        <div class="tij-ss-sakura"></div>
-        <div class="tij-ss-sakura"></div>
-        <div class="tij-ss-kanji-bg tij-ss-kanji-1">話</div>
-        <div class="tij-ss-kanji-bg tij-ss-kanji-2">語</div>
-        <div class="tij-ss-kanji-bg tij-ss-kanji-3">学</div>
-        <div class="tij-ss-kanji-bg tij-ss-kanji-4">会</div>
-      </div>
+    .tokyo-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
 
-      <!-- Section Header -->
-      <div class="tij-ss-header">
-        <h2 class="tij-ss-title">Weekly Speaking Session Schedule</h2>
-      </div>
+    .overlap {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 2;
+      pointer-events: none;
+    }
 
-      <!-- Content Container -->
-      <div class="tij-ss-container">
-        <!-- Key Features -->
-        <div class="tij-ss-features">
-          <div class="tij-ss-feature-card">
-            <div class="tij-ss-feature-icon">⏰</div>
-            <h3 class="tij-ss-feature-title">Convenient Times</h3>
-            <p class="tij-ss-feature-text">
-              Speaking Sessions held at conveninent times throughout the week
-            </p>
-          </div>
-          <div class="tij-ss-feature-card">
-            <div class="tij-ss-feature-icon">60</div>
-            <h3 class="tij-ss-feature-title">60 Minute Sessions</h3>
-            <p class="tij-ss-feature-text">Full hour of immersive practice</p>
-          </div>
-          <div class="tij-ss-feature-card">
-            <div class="tij-ss-feature-icon">6</div>
-            <h3 class="tij-ss-feature-title">Small Groups</h3>
-            <p class="tij-ss-feature-text">Maximum 6 students per session</p>
-          </div>
-          <div class="tij-ss-feature-card">
-            <div class="tij-ss-feature-icon">2+</div>
-            <h3 class="tij-ss-feature-title">Flexible Booking</h3>
-            <p class="tij-ss-feature-text">
-              Book 2 sessions at a time, unlimited total
-            </p>
-          </div>
-        </div>
+    .caption {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
 
-        <!-- Pricing Section -->
-        <div class="tij-ss-pricing">
-          <div class="tij-ss-pricing-wrapper">
-            <div class="tij-ss-pricing-bg-accent"></div>
-            <div class="tij-ss-pricing-bg-accent"></div>
+    .caption p {
+      margin: 0;
+      color: var(--color-white);
+      font-weight: 800;
+      font-size: clamp(1.75rem, 4vw, 3rem);
+      line-height: 1.6;
+      max-width: 1000px;
+      letter-spacing: 0.5px;
+      -webkit-text-stroke: 1px rgba(0, 0, 0, 0.95);
+      text-stroke: 1px rgba(0, 0, 0, 0.95);
+      text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.95), 1px -1px 0 rgba(0, 0, 0, 0.95),
+        -1px 1px 0 rgba(0, 0, 0, 0.95), 1px 1px 0 rgba(0, 0, 0, 0.95);
+    }
 
-            <div class="tij-ss-pricing-header">
-              <h3 class="tij-ss-pricing-title">
-                Investment in Your Japanese Journey
-              </h3>
-              <p class="tij-ss-pricing-subtitle">
-                Choose the plan that works best for you
-              </p>
-            </div>
+    .caption .highlight {
+      text-decoration-line: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 6px;
+      text-decoration-color: var(--color-white);
+      font-weight: 900;
+    }
 
-            <div class="tij-ss-pricing-cards">
-              <div class="tij-ss-price-card">
-                <div class="tij-ss-discount-badge">30% OFF</div>
-                <div class="tij-ss-price-period">Monthly</div>
-                <div class="tij-ss-price-amount original">200</div>
-                <div class="tij-ss-price-amount">140</div>
-                <div class="tij-ss-price-currency">USD per month</div>
-              </div>
+    .caption .italic {
+      font-style: italic;
+      font-weight: 700;
+    }
 
-              <div class="tij-ss-price-card featured">
-                <div class="tij-ss-discount-badge">30% OFF</div>
-                <div class="tij-ss-price-period">Annual</div>
-                <div class="tij-ss-price-amount original">2000</div>
-                <div class="tij-ss-price-amount">1400</div>
-                <div class="tij-ss-price-currency">USD per year</div>
-                <div class="tij-ss-price-savings">
-                  Save $1000 with annual plan!
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        /* ================
-     Utility: ensure style once
-     ================ */
-        function ensureStyle(id, css) {
-          if (!document.getElementById(id)) {
-            const s = document.createElement("style");
-            s.id = id;
-            s.textContent = css;
-            document.head.appendChild(s);
-          }
-        }
+    /* ==========================================
+       4. PROBLEMS SECTION (DARK)
+    ========================================== */
+    .problems-section {
+      background-color: var(--color-brown);
+      padding: 80px 20px;
+      color: var(--color-white);
+    }
 
-        /* =========================
-     FAQ: toggle, ripple, tilt
-     ========================= */
-        (function FAQModule() {
-          const faqWrapper = document.querySelector(".tij-faq-wrapper");
-          const faqItems = document.querySelectorAll(".tij-faq-item");
+    .problems-section .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
 
-          if (!faqWrapper || faqItems.length === 0) return;
+    .problems-section img {
+      height: 450px;
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+    }
 
-          // Intersection Observer for FAQ section reveal
-          const sectionObserver = new IntersectionObserver(
-            (entries) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) entry.target.classList.add("in-view");
-              });
-            },
-            {
-              threshold: 0.1,
-              rootMargin: "0px 0px -100px 0px",
-            }
-          );
-          sectionObserver.observe(faqWrapper);
+    .problems-section .text-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex: 1;
+    }
 
-          // Add ripple keyframes + base class once
-          ensureStyle(
-            "tij-ripple-style",
-            `
-      @keyframes tijRippleExpand { to { transform: scale(4); opacity: 0; } }
-      .tij-ripple-elm { position: absolute; border-radius: 50%; pointer-events: none; transform: scale(0); animation: tijRippleExpand 0.6s ease-out; background: rgba(255,255,255,0.5); }
-    `
-          );
+    .problems-section .text-container h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-weight: 800;
+      line-height: 1.3;
+      color: var(--color-green);
+    }
 
-          faqItems.forEach((item) => {
-            const question = item.querySelector(".tij-faq-question");
-            if (!question) return;
+    .problems-section li {
+      list-style: none;
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 1.6;
+      position: relative;
+      padding-left: 28px;
+    }
 
-            // Click
-            question.addEventListener("click", function (ev) {
-              toggleFaqItem(item, ev);
-            });
+    .problems-section li::before {
+      content: "➔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--color-linen);
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-            // Keyboard support: Enter / Space
-            question.addEventListener("keydown", function (ev) {
-              if (ev.key === "Enter" || ev.key === " ") {
-                ev.preventDefault();
-                toggleFaqItem(item, ev);
-              }
-            });
+    .problems-section button {
+      background-color: var(--color-white);
+      color: var(--color-black);
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 9999px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-            // Hover tilt for each FAQ item
-            item.addEventListener("mousemove", function (e) {
-              const rect = item.getBoundingClientRect();
-              const x = e.clientX - rect.left;
-              const y = e.clientY - rect.top;
-              const centerX = rect.width / 2;
-              const centerY = rect.height / 2;
-              const rotateX = (y - centerY) / 20;
-              const rotateY = (centerX - x) / 20;
-              item.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;
-            });
+    .problems-section button:hover {
+      background-color: var(--color-linen);
+    }
 
-            item.addEventListener("mouseleave", function () {
-              item.style.transform =
-                "perspective(1000px) rotateX(0) rotateY(0) translateY(0)";
-            });
-          }); // faqItems.forEach
+    /* ==========================================
+       5. STUDY SECTION (LIGHT GREEN)
+    ========================================== */
+    .study-section {
+      background-color: var(--color-white);
+      padding: 80px 20px;
+      color: var(--color-green);
+    }
 
-          function toggleFaqItem(item, ev) {
-            const isActive = item.classList.contains("tij-active");
+    .study-section .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
 
-            // Close all
-            faqItems.forEach((other) => other.classList.remove("tij-active"));
+    .study-section img {
+      height: 450px;
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+    }
 
-            if (!isActive) {
-              item.classList.add("tij-active");
-              // ripple (if event available)
-              const question = item.querySelector(".tij-faq-question");
-              try {
-                createRipple(question, ev);
-              } catch (e) {
-                /* noop */
-              }
-            }
-          }
+    .study-section .text-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex: 1;
+    }
 
-          function createRipple(element, ev) {
-            if (!element) return;
-            const ripple = document.createElement("span");
-            ripple.className = "tij-ripple-elm";
+    .study-section .text-container p {
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.8;
+    }
 
-            const rect = element.getBoundingClientRect();
-            const size = Math.max(rect.width, rect.height);
-            let clientX =
-              ev && ev.clientX ? ev.clientX : rect.left + rect.width / 2;
-            let clientY =
-              ev && ev.clientY ? ev.clientY : rect.top + rect.height / 2;
-            const x = clientX - rect.left - size / 2;
-            const y = clientY - rect.top - size / 2;
+    /* ==========================================
+       6. PROGRAM FEATURES SECTION (LIGHT)
+    ========================================== */
+    .program-features-section {
+      background-color: var(--color-green);
+      padding: 80px 20px;
+      color: var(--color-white);
+    }
 
-            ripple.style.width = ripple.style.height = size + "px";
-            ripple.style.left = x + "px";
-            ripple.style.top = y + "px";
-            // ensure position for parent
-            if (getComputedStyle(element).position === "static")
-              element.style.position = "relative";
-            element.appendChild(ripple);
+    .program-features-section .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
 
-            setTimeout(() => ripple.remove(), 650);
-          }
+    .program-features-section img {
+      height: 450px;
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+    }
 
-          // Respect reduced motion
-          if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-            faqItems.forEach((i) => (i.style.transition = "none"));
-          }
-        })(); // FAQModule end
+    .program-features-section .text-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex: 0.9;
+    }
 
-        /* ===================================
-     ATeam: particles, parallax, reveal,
-     member tilt, glitch
-     =================================== */
-        (function ATeamModule() {
-          // Particles container
-          const particlesContainer = document.getElementById("ateamParticles");
-          if (particlesContainer) {
-            function createParticle() {
-              const particle = document.createElement("div");
-              particle.className = "particle";
-              particle.style.left = Math.random() * 100 + "%";
-              particle.style.animationDelay = Math.random() * 10 + "s";
-              particle.style.animationDuration = 10 + Math.random() * 10 + "s";
-              particlesContainer.appendChild(particle);
+    .program-features-section .text-container h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-weight: 800;
+      line-height: 1.3;
+      color: var(--color-brown);
+    }
 
-              setTimeout(() => {
-                if (particle.parentNode) particle.remove();
-              }, 20000);
-            }
+    .program-features-section li {
+      margin-left: 20px;
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
 
-            const particleInterval = setInterval(createParticle, 500);
-            for (let i = 0; i < 20; i++) setTimeout(createParticle, i * 200);
+    .program-features-section button {
+      background-color: var(--color-white);
+      color: var(--color-black);
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 9999px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-            // clean up interval on unload
-            window.addEventListener("beforeunload", () =>
-              clearInterval(particleInterval)
-            );
-          }
+    .program-features-section button:hover {
+      background-color: var(--color-linen);
+    }
 
-          // Parallax update will be shared — see SharedParallax below
+    /* ==========================================
+       7. VIDEO SECTION (LIGHT)
+    ========================================== */
+    .video-section {
+      background-color: var(--color-white);
+      padding: 80px 20px;
+      text-align: center;
+    }
 
-          // Reveal observer
-          const revealElements = document.querySelectorAll(
-            ".ateam-header, .ateam-intro, .ateam-member, .ateam-message"
-          );
-          if (revealElements.length) {
-            const revealObserver = new IntersectionObserver(
-              (entries) => {
-                entries.forEach((entry) => {
-                  if (entry.isIntersecting) {
-                    entry.target.classList.add("reveal-active");
-                    if (entry.target.classList.contains("ateam-member")) {
-                      const members =
-                        document.querySelectorAll(".ateam-member");
-                      members.forEach((member, index) => {
-                        if (member === entry.target)
-                          member.style.animationDelay = `${index * 0.2}s`;
-                      });
-                    }
-                  }
-                });
-              },
-              { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
-            );
+    .video-section .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-            revealElements.forEach((el) => revealObserver.observe(el));
-          }
+    .video-section h2 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: var(--color-brown);
+    }
 
-          // member card tilt
-          const memberCards = document.querySelectorAll(".ateam-member");
-          memberCards.forEach((card) => {
-            card.addEventListener("mousemove", (e) => {
-              const rect = card.getBoundingClientRect();
-              const x = e.clientX - rect.left;
-              const y = e.clientY - rect.top;
-              const centerX = rect.width / 2;
-              const centerY = rect.height / 2;
-              const rotateX = ((y - centerY) / centerY) * -10;
-              const rotateY = ((x - centerX) / centerX) * 10;
-              card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
-            });
-            card.addEventListener("mouseleave", () => {
-              card.style.transform =
-                "perspective(1000px) rotateX(0) rotateY(0) translateY(0)";
-            });
-          });
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+    }
 
-          // glitch hover for member names
-          const memberNames = document.querySelectorAll(".ateam-name");
-          memberNames.forEach((name) => {
-            name.addEventListener("mouseenter", function () {
-              this.style.animation = "glitchText 0.3s ease";
-              setTimeout(() => {
-                this.style.animation = "";
-              }, 300);
-            });
-          });
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 12px;
+    }
 
-          // add glitch keyframes once
-          ensureStyle(
-            "tij-glitch-style",
-            `
-      @keyframes glitchText {
-        0%,100% { transform: translate(0); }
-        20% { transform: translate(-2px, 2px); }
-        40% { transform: translate(-2px, -2px); }
-        60% { transform: translate(2px, 2px); }
-        80% { transform: translate(2px, -2px); }
+    /* ==========================================
+       8. STEPS SECTION (LIGHT)
+    ========================================== */
+    .steps-section {
+      background: linear-gradient(135deg, var(--color-linen) 0%, #c4b693 50%, var(--color-brown) 100%);
+      color: var(--color-brown);
+      padding: 80px 20px;
+    }
+
+    .steps-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .steps-header h2 {
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin: 0;
+      color: var(--color-brown);
+    }
+
+    .steps-sub {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #444;
+      margin-top: 5px;
+    }
+
+    .steps-header .btn {
+      background-color: var(--color-white);
+      color: var(--color-brown);
+      padding: 12px 28px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .steps-header .btn:hover {
+      background-color: var(--color-brown);
+      color: var(--color-white);
+    }
+
+    .grid-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .step {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 16px;
+      padding: 30px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .step:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+    }
+
+    .step-visual {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .step-number {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--color-white);
+      background-color: var(--color-brown);
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+
+    .step-icon {
+      width: 30px;
+      height: 30px;
+      color: var(--color-brown);
+    }
+
+    .step-icon svg {
+      stroke-width: 1.5;
+    }
+
+    .step-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-brown);
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 0.95rem;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* ==========================================
+       9. SPEAKING SESSIONS SECTION (LIGHT) - ORIGINAL
+    ========================================== */
+    .tij-speaking-sessions {
+      position: relative;
+      padding: 120px 20px 100px;
+      background: linear-gradient(180deg, #e8e5df 0%, #f5f1e8 25%, #fff 75%, #f8f9fa 100%);
+    }
+
+    .tij-ss-bg-elements {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .tij-ss-grid-pattern {
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background-image: linear-gradient(rgba(212, 188, 140, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 188, 140, 0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: gridSlide 40s linear infinite;
+    }
+
+    @keyframes gridSlide {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(50px, 50px); }
+    }
+
+    .tij-ss-sakura {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: rgba(212, 188, 140, 0.7);
+      border-radius: 0 100% 0 100%;
+      animation: sakuraFall 15s linear infinite;
+    }
+
+    .tij-ss-sakura:nth-child(odd) {
+      animation-duration: 20s;
+      width: 12px;
+      height: 12px;
+    }
+
+    @keyframes sakuraFall {
+      0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }
+      10% { opacity: 0.8; }
+      90% { opacity: 0.8; }
+      100% { transform: translateY(calc(100vh + 100px)) rotate(720deg); opacity: 0; }
+    }
+
+    .tij-ss-sakura:nth-child(1) { left: 15%; animation-delay: 0s; }
+    .tij-ss-sakura:nth-child(2) { left: 35%; animation-delay: 3s; }
+    .tij-ss-sakura:nth-child(3) { left: 55%; animation-delay: 6s; }
+    .tij-ss-sakura:nth-child(4) { left: 75%; animation-delay: 9s; }
+    .tij-ss-sakura:nth-child(5) { left: 95%; animation-delay: 12s; }
+
+    .tij-ss-header {
+      text-align: center;
+      margin-bottom: 80px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .tij-ss-title {
+      font-size: clamp(32px, 4.5vw, 48px);
+      color: var(--color-brown);
+      font-weight: 700;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      position: relative;
+      display: inline-block;
+    }
+
+    .tij-ss-title::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--color-linen), transparent);
+      animation: expandLine 1.2s ease 0.5s forwards;
+    }
+
+    @keyframes expandLine {
+      to { width: 120%; }
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-    `
-          );
-        })(); // ATeamModule end
+    }
 
-        /* ===================================================
-     Shared Parallax + Smooth Scroll + Day-cards + SSI
-     (This consolidates scroll, mousemove, and observers)
-     =================================================== */
-        (function SharedParallaxAndSSModule() {
-          // ----- Smooth scroll for CTA (defensive) -----
-          const cta = document.querySelector(".tij-promo-cta");
-          if (cta) {
-            cta.addEventListener("click", function (e) {
-              // support anchor w/out href safely
-              const href = this.getAttribute("href");
-              if (!href) return;
-              e.preventDefault();
-              const target = document.querySelector(href);
-              if (target) {
-                target.scrollIntoView({ behavior: "smooth", block: "start" });
-              }
-            });
-          }
+    .tij-ss-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+    }
 
-          // ----- Intersection observer for ss elements (features/pricing/day/info) -----
-          const observerOptions = {
-            threshold: 0.2,
-            rootMargin: "0px 0px -50px 0px",
-          };
-          const ssObserver = new IntersectionObserver((entries) => {
+    .tij-ss-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-bottom: 80px;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s ease 0.3s forwards;
+    }
+
+    .tij-ss-feature-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tij-ss-feature-card::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(45deg, var(--color-linen), var(--color-green), var(--color-linen));
+      border-radius: 20px;
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 0.3s ease;
+    }
+
+    .tij-ss-feature-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    }
+
+    .tij-ss-feature-card:hover::before {
+      opacity: 0.1;
+    }
+
+    .tij-ss-feature-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--color-linen), var(--color-green));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 24px;
+      color: var(--color-white);
+      box-shadow: 0 5px 20px rgba(212, 188, 140, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .tij-ss-feature-card:hover .tij-ss-feature-icon {
+      transform: rotate(360deg) scale(1.1);
+    }
+
+    .tij-ss-feature-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--color-brown);
+      margin-bottom: 10px;
+    }
+
+    .tij-ss-feature-text {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .tij-ss-pricing {
+      margin-bottom: 80px;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s ease 0.5s forwards;
+    }
+
+    .tij-ss-pricing-wrapper {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.95) 100%);
+      border-radius: 30px;
+      padding: 60px 40px;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tij-ss-pricing-bg-accent {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(212, 188, 140, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      top: -150px;
+      right: -150px;
+      animation: float 20s ease-in-out infinite;
+    }
+
+    .tij-ss-pricing-bg-accent:nth-child(2) {
+      width: 250px;
+      height: 250px;
+      bottom: -125px;
+      left: -125px;
+      top: auto;
+      animation-delay: -10s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(30px, -30px) scale(1.1); }
+      66% { transform: translate(-20px, 20px) scale(0.9); }
+    }
+
+    .tij-ss-pricing-header {
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .tij-ss-pricing-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-brown);
+      margin-bottom: 10px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .tij-ss-pricing-subtitle {
+      font-size: 18px;
+      color: #666;
+      font-style: italic;
+    }
+
+    .tij-ss-pricing-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .tij-ss-price-card {
+      background: var(--color-white);
+      border-radius: 20px;
+      padding: 40px 35px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow: hidden;
+    }
+
+    .tij-ss-price-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--color-linen), var(--color-green));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+
+    .tij-ss-price-card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    }
+
+    .tij-ss-price-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .tij-ss-price-card.featured {
+      transform: scale(1.05);
+      box-shadow: 0 15px 50px rgba(212, 188, 140, 0.25);
+    }
+
+    .tij-ss-price-card.featured::after {
+      content: "BEST VALUE";
+      position: absolute;
+      top: 20px;
+      right: -30px;
+      background: linear-gradient(135deg, var(--color-linen), var(--color-green));
+      color: var(--color-white);
+      padding: 5px 40px;
+      font-size: 12px;
+      font-weight: 700;
+      transform: rotate(45deg);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .tij-ss-discount-badge {
+      display: inline-block;
+      background: #ff4757;
+      color: var(--color-white);
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .tij-ss-price-period {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-green);
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .tij-ss-price-amount {
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--color-brown);
+      margin-bottom: 5px;
+      position: relative;
+    }
+
+    .tij-ss-price-amount::before {
+      content: "$";
+      font-size: 28px;
+      position: absolute;
+      left: -20px;
+      top: 10px;
+      color: var(--color-linen);
+    }
+
+    .tij-ss-price-amount.original {
+      font-size: 32px;
+      color: #999;
+      text-decoration: line-through;
+      margin-bottom: 5px;
+    }
+
+    .tij-ss-price-amount.original::before {
+      font-size: 20px;
+      left: -15px;
+      top: 5px;
+    }
+
+    .tij-ss-price-currency {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .tij-ss-price-savings {
+      background: rgba(212, 188, 140, 0.1);
+      border-radius: 10px;
+      padding: 10px 15px;
+      font-size: 14px;
+      color: var(--color-green);
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    .tij-ss-kanji-bg {
+      position: absolute;
+      font-size: 200px;
+      color: rgba(212, 188, 140, 0.02);
+      font-weight: bold;
+      user-select: none;
+      z-index: 0;
+    }
+
+    .tij-ss-kanji-1 { top: 5%; left: 5%; }
+    .tij-ss-kanji-2 { bottom: 15%; right: 10%; }
+    .tij-ss-kanji-3 { top: 40%; right: 45%; }
+    .tij-ss-kanji-4 { bottom: 5%; left: 20%; }
+
+    /* ==========================================
+       10. A-TEAM SECTION (DARK) - ORIGINAL
+    ========================================== */
+    .ateam-section {
+      position: relative;
+      min-height: 100vh;
+      background: var(--color-black);
+      overflow: hidden;
+      padding: 100px 20px;
+    }
+
+    .ateam-bg-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.03;
+      background-image: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 35px,
+          rgba(212, 188, 140, 0.1) 35px,
+          rgba(212, 188, 140, 0.1) 70px
+        ),
+        repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 35px,
+          rgba(76, 99, 58, 0.1) 35px,
+          rgba(76, 99, 58, 0.1) 70px
+        );
+      animation: bgPatternMove 30s linear infinite;
+    }
+
+    @keyframes bgPatternMove {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(70px, 70px); }
+    }
+
+    .ateam-kanji-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .floating-kanji {
+      position: absolute;
+      font-size: 80px;
+      color: rgba(212, 188, 140, 0.05);
+      font-family: "Yu Mincho", serif;
+      animation: kanjiFloat 20s ease-in-out infinite;
+      user-select: none;
+    }
+
+    .floating-kanji:nth-child(1) { content: "魂"; top: 10%; left: 10%; animation-delay: 0s; }
+    .floating-kanji:nth-child(2) { content: "道"; top: 60%; right: 15%; animation-delay: 5s; }
+    .floating-kanji:nth-child(3) { content: "心"; bottom: 20%; left: 50%; animation-delay: 10s; }
+    .floating-kanji:nth-child(4) { content: "和"; top: 30%; right: 40%; animation-delay: 15s; }
+
+    @keyframes kanjiFloat {
+      0%, 100% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.05; }
+      50% { transform: translateY(-30px) rotate(180deg) scale(1.1); opacity: 0.08; }
+    }
+
+    .ateam-container {
+      position: relative;
+      z-index: 10;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .ateam-header {
+      text-align: center;
+      margin-bottom: 80px;
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+
+    .ateam-header.reveal-active {
+      animation: ateamFadeInDown 1s ease forwards;
+    }
+
+    @keyframes ateamFadeInDown {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .ateam-label {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--color-linen);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      display: inline-block;
+      position: relative;
+    }
+
+    .ateam-label::before,
+    .ateam-label::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 50px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--color-linen));
+    }
+
+    .ateam-label::before {
+      right: calc(100% + 20px);
+      background: linear-gradient(270deg, transparent, var(--color-linen));
+    }
+
+    .ateam-label::after {
+      left: calc(100% + 20px);
+    }
+
+    .ateam-title {
+      font-size: clamp(42px, 6vw, 72px);
+      font-weight: 900;
+      color: var(--color-white);
+      margin-bottom: 30px;
+      line-height: 1.1;
+      position: relative;
+    }
+
+    .ateam-subtitle {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 60px;
+      position: relative;
+    }
+
+    .ateam-subtitle::after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--color-linen), transparent);
+    }
+
+    .ateam-intro {
+      background: linear-gradient(
+        135deg,
+        rgba(212, 188, 140, 0.1) 0%,
+        rgba(76, 99, 58, 0.1) 100%
+      );
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 30px;
+      padding: 50px;
+      margin-bottom: 100px;
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: scale(0.9);
+    }
+
+    .ateam-intro.reveal-active {
+      animation: ateamScaleIn 1s ease forwards;
+    }
+
+    @keyframes ateamScaleIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .ateam-intro::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(
+        circle,
+        rgba(212, 188, 140, 0.1) 0%,
+        transparent 70%
+      );
+      animation: pulseGlow 4s ease-in-out infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 0.5;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    }
+
+    .ateam-intro-text {
+      font-size: 18px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .ateam-intro-text strong {
+      color: var(--color-linen);
+      font-weight: 700;
+    }
+
+    .ateam-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .ateam-member {
+      position: relative;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(50px) rotateX(-10deg);
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .ateam-member.reveal-active {
+      animation: memberReveal 0.8s ease forwards;
+      animation-delay: var(--member-delay);
+    }
+
+    .ateam-member:nth-child(1) { --member-delay: 0.2s; }
+    .ateam-member:nth-child(2) { --member-delay: 0.4s; }
+    .ateam-member:nth-child(3) { --member-delay: 0.6s; }
+
+    @keyframes memberReveal {
+      to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+      }
+    }
+
+    .ateam-member:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(212, 188, 140, 0.5);
+      box-shadow: 0 20px 40px rgba(212, 188, 140, 0.2);
+    }
+
+    .ateam-image-container {
+      position: relative;
+      height: 400px;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--color-green) 0%, var(--color-brown) 100%);
+    }
+
+    .ateam-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+      filter: grayscale(20%);
+    }
+
+    .ateam-member:hover .ateam-image {
+      transform: scale(1.1);
+      filter: grayscale(0%);
+    }
+
+    .ateam-image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        rgba(10, 10, 10, 0.9) 100%
+      );
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
+
+    .ateam-member:hover .ateam-image-overlay {
+      opacity: 0.4;
+    }
+
+    .ateam-info {
+      padding: 30px;
+      position: relative;
+    }
+
+    .ateam-name {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--color-white);
+      margin-bottom: 10px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .ateam-name::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: var(--color-linen);
+      transition: width 0.3s ease;
+    }
+
+    .ateam-member:hover .ateam-name::after {
+      width: 100%;
+    }
+
+    .ateam-role {
+      font-size: 16px;
+      color: var(--color-linen);
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .ateam-title-role {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 20px;
+    }
+
+    .ateam-bio {
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 25px;
+      min-height: 100px;
+    }
+
+    .ateam-social {
+      display: flex;
+      gap: 15px;
+    }
+
+    .ateam-social-link {
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ateam-social-link::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: var(--color-linen);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease;
+    }
+
+    .ateam-social-link:hover {
+      border-color: var(--color-linen);
+      transform: translateY(-3px);
+    }
+
+    .ateam-social-link:hover::before {
+      width: 100%;
+      height: 100%;
+    }
+
+    .ateam-social-link svg {
+      width: 20px;
+      height: 20px;
+      fill: rgba(255, 255, 255, 0.8);
+      position: relative;
+      z-index: 2;
+      transition: fill 0.3s ease;
+    }
+
+    .ateam-social-link:hover svg {
+      fill: var(--color-white);
+    }
+
+    .ateam-message {
+      text-align: center;
+      padding: 60px 40px;
+      background: rgba(212, 188, 140, 0.05);
+      border: 2px solid rgba(212, 188, 140, 0.2);
+      border-radius: 30px;
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .ateam-message.reveal-active {
+      animation: ateamFadeInUp 1s ease forwards;
+    }
+
+    @keyframes ateamFadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .ateam-message-text {
+      font-size: 20px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.9);
+      font-style: italic;
+      position: relative;
+      z-index: 2;
+    }
+
+    .ateam-message-text em {
+      color: var(--color-linen);
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .ateam-particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: var(--color-linen);
+      border-radius: 50%;
+      opacity: 0;
+      animation: particleFloat 10s linear infinite;
+    }
+
+    @keyframes particleFloat {
+      0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.8;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-100vh) scale(1);
+        opacity: 0;
+      }
+    }
+
+    /* ==========================================
+       11. FAQ SECTION (LIGHT) - ORIGINAL
+    ========================================== */
+    .tij-faq-wrapper * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .tij-faq-wrapper {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(180deg, #f5f1e8 0%, #e8e5df 100%);
+      padding: 80px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tij-faq-bg-decoration {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      opacity: 0.05;
+    }
+
+    .tij-faq-bg-circle {
+      position: absolute;
+      border-radius: 50%;
+      animation: tijFaqFloat 20s infinite ease-in-out paused;
+    }
+
+    .tij-faq-wrapper.in-view .tij-faq-bg-circle {
+      animation-play-state: running;
+    }
+
+    .tij-faq-bg-circle:nth-child(1) {
+      width: 300px;
+      height: 300px;
+      background: var(--color-linen);
+      top: -150px;
+      right: -150px;
+      animation-delay: 0s;
+    }
+
+    .tij-faq-bg-circle:nth-child(2) {
+      width: 400px;
+      height: 400px;
+      background: var(--color-green);
+      bottom: -200px;
+      left: -200px;
+      animation-delay: 5s;
+    }
+
+    .tij-faq-bg-circle:nth-child(3) {
+      width: 250px;
+      height: 250px;
+      background: var(--color-brown);
+      top: 50%;
+      left: 50%;
+      animation-delay: 10s;
+    }
+
+    @keyframes tijFaqFloat {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(30px, -30px) scale(1.1); }
+      66% { transform: translate(-20px, 20px) scale(0.9); }
+    }
+
+    .tij-faq-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .tij-faq-header {
+      text-align: center;
+      margin-bottom: 60px;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .tij-faq-wrapper.in-view .tij-faq-header {
+      animation: tijFaqFadeUp 1s ease forwards;
+    }
+
+    .tij-faq-title {
+      font-size: clamp(36px, 5vw, 48px);
+      font-weight: 800;
+      color: var(--color-brown);
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .tij-faq-title::before {
+      content: "?";
+      position: absolute;
+      font-size: 120px;
+      color: rgba(76, 99, 58, 0.1);
+      top: -40px;
+      left: -60px;
+      font-weight: 900;
+      animation: tijQuestionRotate 10s linear infinite paused;
+    }
+
+    .tij-faq-wrapper.in-view .tij-faq-title::before {
+      animation-play-state: running;
+    }
+
+    @keyframes tijQuestionRotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .tij-faq-subtitle {
+      font-size: 18px;
+      color: var(--color-brown);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .tij-faq-items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .tij-faq-item {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      opacity: 0;
+      transform: translateX(-30px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+
+    .tij-faq-wrapper.in-view .tij-faq-item {
+      animation: tijFaqSlideIn 0.6s ease forwards;
+      animation-delay: calc(var(--item-index) * 0.1s);
+    }
+
+    .tij-faq-item:hover {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      transform: translateY(-2px);
+    }
+
+    .tij-faq-item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 4px;
+      background: linear-gradient(180deg, var(--accent-gradient));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .tij-faq-item.tij-active::before {
+      opacity: 1;
+    }
+
+    .tij-faq-item:nth-child(1) { --accent-gradient: #d4bc8c 0%, #5c633a 100%; --item-index: 0; }
+    .tij-faq-item:nth-child(2) { --accent-gradient: #5c633a 0%, #483c23 100%; --item-index: 1; }
+    .tij-faq-item:nth-child(3) { --accent-gradient: #d4bc8c 0%, #483c23 100%; --item-index: 2; }
+    .tij-faq-item:nth-child(4) { --accent-gradient: #5c633a 0%, #d4bc8c 100%; --item-index: 3; }
+    .tij-faq-item:nth-child(5) { --accent-gradient: #483c23 0%, #d4bc8c 100%; --item-index: 4; }
+
+    @keyframes tijFaqSlideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes tijFaqFadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .tij-faq-question {
+      padding: 25px 30px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tij-faq-question::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+      );
+      transition: left 0.5s ease;
+    }
+
+    .tij-faq-item.tij-active .tij-faq-question::after {
+      left: 100%;
+    }
+
+    .tij-faq-question-text {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--color-brown);
+      flex: 1;
+      padding-right: 20px;
+      line-height: 1.4;
+    }
+
+    .tij-faq-icon-wrapper {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      flex-shrink: 0;
+    }
+
+    .tij-faq-icon {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, #f5f1e8 0%, #e8e5df 100%);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tij-faq-item.tij-active .tij-faq-icon {
+      background: linear-gradient(135deg, var(--accent-gradient));
+      transform: rotate(180deg);
+    }
+
+    .tij-faq-plus {
+      position: relative;
+      width: 24px;
+      height: 24px;
+    }
+
+    .tij-faq-plus::before,
+    .tij-faq-plus::after {
+      content: "";
+      position: absolute;
+      background: var(--color-brown);
+      transition: all 0.3s ease;
+    }
+
+    .tij-faq-plus::before {
+      width: 16px;
+      height: 2px;
+      top: 11px;
+      left: 4px;
+    }
+
+    .tij-faq-plus::after {
+      width: 2px;
+      height: 16px;
+      top: 4px;
+      left: 11px;
+    }
+
+    .tij-faq-item.tij-active .tij-faq-plus::before,
+    .tij-faq-item.tij-active .tij-faq-plus::after {
+      background: var(--color-white);
+    }
+
+    .tij-faq-item.tij-active .tij-faq-plus::after {
+      transform: rotate(90deg);
+      opacity: 0;
+    }
+
+    .tij-faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .tij-faq-answer-content {
+      padding: 0 30px 25px 30px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--color-brown);
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.3s ease 0.1s;
+    }
+
+    .tij-faq-item.tij-active .tij-faq-answer {
+      max-height: 500px;
+    }
+
+    .tij-faq-item.tij-active .tij-faq-answer-content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .tij-faq-highlight {
+      background: linear-gradient(
+        135deg,
+        rgba(212, 188, 140, 0.1) 0%,
+        rgba(76, 99, 58, 0.1) 100%
+      );
+      border-left: 3px solid var(--accent-gradient);
+      padding: 15px 20px;
+      margin-top: 15px;
+      border-radius: 10px;
+      font-style: italic;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tij-faq-decoration {
+      position: absolute;
+      font-size: 200px;
+      opacity: 0.03;
+      color: var(--color-green);
+      user-select: none;
+      z-index: 0;
+    }
+
+    .tij-faq-decoration-1 {
+      top: 10%;
+      right: 5%;
+      transform: rotate(-15deg);
+      animation: tijFaqDrift 15s ease-in-out infinite paused;
+    }
+
+    .tij-faq-decoration-2 {
+      bottom: 10%;
+      left: 5%;
+      transform: rotate(25deg);
+      animation: tijFaqDrift 15s ease-in-out infinite reverse paused;
+    }
+
+    .tij-faq-wrapper.in-view .tij-faq-decoration-1,
+    .tij-faq-wrapper.in-view .tij-faq-decoration-2 {
+      animation-play-state: running;
+    }
+
+    @keyframes tijFaqDrift {
+      0%, 100% { transform: translateX(0) rotate(-15deg); }
+      50% { transform: translateX(30px) rotate(-5deg); }
+    }
+
+    /* ==========================================
+       RESPONSIVE DESIGN
+    ========================================== */
+    @media (max-width: 768px) {
+      .hero-section .sub-section {
+        padding: 20px;
+        font-size: 20px;
+      }
+
+      .hero-section .main-text {
+        font-size: 2.5rem;
+      }
+
+      .common-traps-section,
+      .problems-section,
+      .study-section,
+      .program-features-section,
+      .video-section,
+      .steps-section,
+      .tij-speaking-sessions,
+      .ateam-section,
+      .tij-faq-wrapper {
+        padding: 60px 15px;
+      }
+
+      .common-traps-section .main-container,
+      .problems-section .main-container,
+      .study-section .main-container,
+      .program-features-section .main-container {
+        flex-direction: column;
+      }
+
+      .tij-ss-features,
+      .ateam-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tij-ss-pricing-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .steps-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .grid-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .tij-faq-question {
+        padding: 20px;
+      }
+
+      .ateam-image-container {
+        height: 300px;
+      }
+
+      .tij-faq-decoration {
+        font-size: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. HERO SECTION -->
+  <div class="hero-section">
+    <div class="main-text">Don't study Japanese. Live it.</div>
+    <div class="sub-section">
+      <p>Our original program is designed to get you to cultural and linguistic fluency as quickly and efficiently as possible.</p>
+      <button class="btn">I'm ready to sign up now</button>
+      <span>more details below</span>
+    </div>
+  </div>
+
+  <!-- 2. COMMON TRAPS SECTION -->
+  <div class="common-traps-section">
+    <div class="main-container">
+      <img src="/assets/common.png" alt="Common Traps image" />
+      <div class="text-container">
+        <h2>We save students from these common traps-</h2>
+        <div class="list">
+          <p>"I studied Japanese and came to Japan but. . ."</p>
+          <ul>
+            <li>I can't escape my foreigner-only circles and make Japanese friends.</li>
+            <li>The only job I can get is as an English Teacher, but I'm not a teacher!</li>
+            <li>I don't understand Japanese Culture, so I am always causing problems.</li>
+            <li>I'm not thriving, I'm barely surviving. I want to leave Japan, help!</li>
+          </ul>
+        </div>
+        <button class="btn">I'm ready to sign up now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. TOKYO IMAGE SECTION -->
+  <div class="tokyo-image">
+    <img src="/assets/tokyo-image.jpg" alt="tokyo image" />
+    <div class="overlap"></div>
+    <div class="caption">
+      <p>
+        We teach you what you actually need to know, and we show what it takes to
+        <span class="highlight">Thrive in Japan</span>. We can do this
+        <span class="italic">because we've done it ourselves.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- 4. PROBLEMS SECTION -->
+  <div class="problems-section">
+    <div class="main-container">
+      <img src="/assets/common.png" alt="Common Traps image" />
+      <div class="text-container">
+        <h2>Problems with other Japanese programs. . .</h2>
+        <div class="list">
+          <ul>
+            <li>Limited time to actually practice speaking.</li>
+            <li>No schedule flexibility.</li>
+            <li>Programs are geared to pass the JLPT test, but not to actually communicate in Japanese.</li>
+            <li>Only the literal meaning of words is taught, when the Japanese Language is between 60-80% contextual.</li>
+            <li>Everywhere uses the same books: Genki, Minna no Nihongo, etc. but obviously it's not working.</li>
+          </ul>
+        </div>
+        <button class="btn">Show me the Solution!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. STUDY SECTION -->
+  <div class="study-section">
+    <div class="main-container">
+      <div class="text-container">
+        <p>
+          Study whenever you want. <br />
+          Speak as much as you want. <br />
+          When all you have is "right now" <br />
+          Thrive in Japan is here for you.
+        </p>
+      </div>
+      <img src="/assets/common.png" alt="Study in Japan" />
+    </div>
+  </div>
+
+  <!-- 6. PROGRAM FEATURES SECTION -->
+  <div class="program-features-section">
+    <div class="main-container">
+      <img src="/assets/common.png" alt="Program Feature" />
+      <div class="text-container">
+        <h2>Our Program Features</h2>
+        <div class="list">
+          <ul>
+            <li>1-on-1 Speaking Practice with Native Japanese Speakers</li>
+            <li>Flexible Scheduling to fit your lifestyle</li>
+            <li>Real World Japanese that you can actually use</li>
+            <li>Cultural Immersion Activities to get you out of your comfort zone</li>
+            <li>Community Support from others on the same journey as you</li>
+          </ul>
+        </div>
+        <button class="btn">I'm ready to sign up now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. VIDEO SECTION -->
+  <div class="video-section">
+    <div class="container">
+      <h2>Actually Learn Japanese.</h2>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/D0UnqGm_miA"
+          title="YouTube video player"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. STEPS SECTION -->
+  <section class="steps-section">
+    <div class="container">
+      <div class="steps-header">
+        <div>
+          <h2>How to Get Started</h2>
+          <p class="steps-sub">Simple, fast and friendly onboarding — get started in minutes.</p>
+        </div>
+        <div>
+          <button class="btn">Register my FREE account now</button>
+        </div>
+      </div>
+      <div class="grid-steps">
+        <div class="step">
+          <div class="step-visual">
+            <div class="step-number">01</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21 21c0-3.866-3.582-7-9-7s-9 3.134-9 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Sign up for a FREE account</h3>
+            <p class="step-desc">Create your account using email or continue with Google — no credit card required.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-visual">
+            <div class="step-number">02</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3l7 4.5v5.5c0 5-3.582 8-7 8s-7-3-7-8V7.5L12 3z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">2‑week Risk Free Trial</h3>
+            <p class="step-desc">Try all premium features for 14 days. Cancel anytime — no surprises.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-visual">
+            <div class="step-number">03</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2l2.5 4.5L19 8l-4 3 1 5-4.5-2.5L8 16l1-5-4-3 4.5-1.5L12 2z" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Subscribe &amp; get 30% OFF for life*</h3>
+            <p class="step-desc">Lock-in a lifetime discount and support ongoing improvements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. SPEAKING SESSIONS SECTION -->
+  <section class="tij-speaking-sessions">
+    <div class="tij-ss-bg-elements">
+      <div class="tij-ss-grid-pattern"></div>
+      <div class="tij-ss-sakura"></div>
+      <div class="tij-ss-sakura"></div>
+      <div class="tij-ss-sakura"></div>
+      <div class="tij-ss-sakura"></div>
+      <div class="tij-ss-sakura"></div>
+      <div class="tij-ss-kanji-bg tij-ss-kanji-1">話</div>
+      <div class="tij-ss-kanji-bg tij-ss-kanji-2">語</div>
+      <div class="tij-ss-kanji-bg tij-ss-kanji-3">学</div>
+      <div class="tij-ss-kanji-bg tij-ss-kanji-4">会</div>
+    </div>
+
+    <div class="tij-ss-header">
+      <h2 class="tij-ss-title">Weekly Speaking Session Schedule</h2>
+    </div>
+
+    <div class="tij-ss-container">
+      <div class="tij-ss-features">
+        <div class="tij-ss-feature-card">
+          <div class="tij-ss-feature-icon">⏰</div>
+          <h3 class="tij-ss-feature-title">Convenient Times</h3>
+          <p class="tij-ss-feature-text">Speaking Sessions held at convenient times throughout the week</p>
+        </div>
+        <div class="tij-ss-feature-card">
+          <div class="tij-ss-feature-icon">60</div>
+          <h3 class="tij-ss-feature-title">60 Minute Sessions</h3>
+          <p class="tij-ss-feature-text">Full hour of immersive practice</p>
+        </div>
+        <div class="tij-ss-feature-card">
+          <div class="tij-ss-feature-icon">6</div>
+          <h3 class="tij-ss-feature-title">Small Groups</h3>
+          <p class="tij-ss-feature-text">Maximum 6 students per session</p>
+        </div>
+        <div class="tij-ss-feature-card">
+          <div class="tij-ss-feature-icon">2+</div>
+          <h3 class="tij-ss-feature-title">Flexible Booking</h3>
+          <p class="tij-ss-feature-text">Book 2 sessions at a time, unlimited total</p>
+        </div>
+      </div>
+
+      <div class="tij-ss-pricing">
+        <div class="tij-ss-pricing-wrapper">
+          <div class="tij-ss-pricing-bg-accent"></div>
+          <div class="tij-ss-pricing-bg-accent"></div>
+          
+          <div class="tij-ss-pricing-header">
+            <h3 class="tij-ss-pricing-title">Investment in Your Japanese Journey</h3>
+            <p class="tij-ss-pricing-subtitle">Choose the plan that works best for you</p>
+          </div>
+
+          <div class="tij-ss-pricing-cards">
+            <div class="tij-ss-price-card">
+              <div class="tij-ss-discount-badge">30% OFF</div>
+              <div class="tij-ss-price-period">Monthly</div>
+              <div class="tij-ss-price-amount original">200</div>
+              <div class="tij-ss-price-amount">140</div>
+              <div class="tij-ss-price-currency">USD per month</div>
+            </div>
+
+            <div class="tij-ss-price-card featured">
+              <div class="tij-ss-discount-badge">30% OFF</div>
+              <div class="tij-ss-price-period">Annual</div>
+              <div class="tij-ss-price-amount original">2000</div>
+              <div class="tij-ss-price-amount">1400</div>
+              <div class="tij-ss-price-currency">USD per year</div>
+              <div class="tij-ss-price-savings">Save $1000 with annual plan!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. TEAM SECTION -->
+  <section class="ateam-section">
+    <div class="ateam-bg-pattern"></div>
+    <div class="ateam-kanji-bg">
+      <div class="floating-kanji">魂</div>
+      <div class="floating-kanji">道</div>
+      <div class="floating-kanji">心</div>
+      <div class="floating-kanji">和</div>
+    </div>
+    <div class="ateam-particles" id="ateamParticles"></div>
+
+    <div class="ateam-container">
+      <div class="ateam-header">
+        <div class="ateam-label">The A-Team</div>
+        <h2 class="ateam-title">Meet the Creators of Thrive in Japan</h2>
+        <p class="ateam-subtitle">The Insiders Who Cracked Japan's Code</p>
+      </div>
+
+      <div class="ateam-intro">
+        <p class="ateam-intro-text">
+          Together, they built the ultimate guide to mastering Japan's silent language—With Thrive in Japan
+          <strong>Learn Japanese</strong>, <strong>Truly belong</strong>, <strong>Live your purpose</strong>.
+        </p>
+      </div>
+
+      <div class="ateam-grid">
+        <div class="ateam-member">
+          <div class="ateam-image-container">
+            <img src="https://i0.wp.com/thriveinjapan.com/wp-content/uploads/2025/04/prof-at-nihonbashi.jpg?resize=768%2C1024&ssl=1" alt="Shige" class="ateam-image" />
+            <div class="ateam-image-overlay"></div>
+          </div>
+          <div class="ateam-info">
+            <h3 class="ateam-name">Shige</h3>
+            <div class="ateam-role">Japanese Cultural Expert</div>
+            <div class="ateam-title-role">Instructor</div>
+            <p class="ateam-bio">
+              Professional Thriver in Japan. A US expat who came to Japan in 2006. After a 25+ year journey to become a world-class traditional Japanese artist and musician, he cracked the code to be accepted, respected and connected in even the most traditional circles in Japan.
+            </p>
+            <div class="ateam-social">
+              <a href="#" class="ateam-social-link">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
+                </svg>
+              </a>
+              <a href="#" class="ateam-social-link">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              <a href="#" class="ateam-social-link">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ateam-member">
+          <div class="ateam-image-container">
+            <img src="https://i0.wp.com/thriveinjapan.com/wp-content/uploads/2025/04/iOS-%E3%81%AE%E7%94%BB%E5%83%8F-768x1024.jpg?resize=768%2C1024&ssl=1" alt="Hiro" class="ateam-image" />
+            <div class="ateam-image-overlay"></div>
+          </div>
+          <div class="ateam-info">
+            <h3 class="ateam-name">Hiro</h3>
+            <div class="ateam-role">Japanese/International Business Expert</div>
+            <div class="ateam-title-role">Co-Instructor</div>
+            <p class="ateam-bio">
+              A global business leader who started with a prestigious position at Sumitomo Corporation. As "kikokushijyo" he spent his childhood in New Jersey and is solidly bi-lingual and bi-cultural. He has vast experience leading elite international teams from Japan to Saudi Arabia.
+            </p>
+            <div class="ateam-social">
+              <a href="#" class="ateam-social-link">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
+                </svg>
+              </a>
+              <a href="#" class="ateam-social-link">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              <a href="#" class="ateam-social-link">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ateam-member">
+          <div class="ateam-image-container">
+            <img src="https://i0.wp.com/thriveinjapan.com/wp-content/uploads/2025/04/IMG_8536-scaled.jpg?resize=768%2C1024&ssl=1" alt="Naoka" class="ateam-image" />
+            <div class="ateam-image-overlay"></div>
+          </div>
+          <div class="ateam-info">
+            <h3 class="ateam-name">Naoka</h3>
+            <div class="ateam-role">Japanese Service Professional</div>
+            <div class="ateam-title-role">Co-Instructor</div>
+            <p class="ateam-bio">
+              A self-made entrepreneur and certified award-winning Japanese Hospitality Expert consulted by Michelin restaurants throughout Japan and as far as Paris. All contents meet her rigorous standard and guarantee that this isn't just opinion. This is how Japan works.
+            </p>
+            <div class="ateam-social">
+              <a href="#" class="ateam-social-link">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
+                </svg>
+              </a>
+              <a href="#" class="ateam-social-link">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              <a href="#" class="ateam-social-link">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ateam-message">
+        <p class="ateam-message-text">
+          If you take these lessons to heart, you could become an <em>award winning Japanese Hospitality expert</em> as well!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FAQ SECTION -->
+  <div class="tij-faq-wrapper">
+    <div class="tij-faq-bg-decoration">
+      <div class="tij-faq-bg-circle"></div>
+      <div class="tij-faq-bg-circle"></div>
+      <div class="tij-faq-bg-circle"></div>
+    </div>
+
+    <div class="tij-faq-decoration tij-faq-decoration-1">学</div>
+    <div class="tij-faq-decoration tij-faq-decoration-2">問</div>
+
+    <div class="tij-faq-container">
+      <div class="tij-faq-header">
+        <h2 class="tij-faq-title">Frequently Asked Questions</h2>
+        <p class="tij-faq-subtitle">Everything you need to know about thriving in Japan</p>
+      </div>
+
+      <div class="tij-faq-items">
+        <div class="tij-faq-item">
+          <div class="tij-faq-question">
+            <h3 class="tij-faq-question-text">What is the Thrive in Japan program?</h3>
+            <div class="tij-faq-icon-wrapper">
+              <div class="tij-faq-icon">
+                <div class="tij-faq-plus"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tij-faq-answer">
+            <div class="tij-faq-answer-content">
+              Thrive in Japan program includes a groundbreaking and original curriculum, unlimited speaking sessions and access to an active community who is committed to helping you thrive in Japan.
+            </div>
+          </div>
+        </div>
+
+        <div class="tij-faq-item">
+          <div class="tij-faq-question">
+            <h3 class="tij-faq-question-text">What if I already have JLPT but I still want to learn to Thrive?</h3>
+            <div class="tij-faq-icon-wrapper">
+              <div class="tij-faq-icon">
+                <div class="tij-faq-plus"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tij-faq-answer">
+            <div class="tij-faq-answer-content">
+              To guarantee that we are creating the type of supportive learning community students need for success we are releasing the program in stages. Currently Thrive in Japan is only available for Absolute beginners and N5 level students.<br />
+              N4 curriculum will be released in November 2025.<br />
+              N3, N2 and N1 programs have planned release dates in 2026.
+            </div>
+          </div>
+        </div>
+
+        <div class="tij-faq-item">
+          <div class="tij-faq-question">
+            <h3 class="tij-faq-question-text">Who can benefit from the Thrive in Japan program?</h3>
+            <div class="tij-faq-icon-wrapper">
+              <div class="tij-faq-icon">
+                <div class="tij-faq-plus"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tij-faq-answer">
+            <div class="tij-faq-answer-content">
+              Simply put: anyone serious about learning Japanese Language and Culture. If you are currently struggling in Japan, this is for you. If you are planning on coming to Japan, Thrive in Japan will easily shave years off of your learning curve.
+            </div>
+          </div>
+        </div>
+
+        <div class="tij-faq-item">
+          <div class="tij-faq-question">
+            <h3 class="tij-faq-question-text">What if I speak advanced Japanese? What if I'm a beginner?</h3>
+            <div class="tij-faq-icon-wrapper">
+              <div class="tij-faq-icon">
+                <div class="tij-faq-plus"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tij-faq-answer">
+            <div class="tij-faq-answer-content">
+              At the moment Thrive in Japan is only accepting true beginners or N5 level learners. We will be launching more advanced levels in stages starting in November 2025 with N4, and finishing with N1 at the end of 2026.
+            </div>
+          </div>
+        </div>
+
+        <div class="tij-faq-item">
+          <div class="tij-faq-question">
+            <h3 class="tij-faq-question-text">Do you actually teach Japanese Language?</h3>
+            <div class="tij-faq-icon-wrapper">
+              <div class="tij-faq-icon">
+                <div class="tij-faq-plus"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tij-faq-answer">
+            <div class="tij-faq-answer-content">
+              <strong>Yes, we do, thrive in Japan is a Japanese Language program that leaves other programs in the dust.</strong>
+              BUT before we start teaching you the language we encourage that ALL of our students go through "The Paradigm Shift" Course.
+              <div class="tij-faq-highlight">
+                Japanese is at least 60% unspoken communication skills, tools and strategies. The remaining 40% is made up of words and grammar structures.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // FAQ Accordion
+      function ensureStyle(id, css) {
+        if (!document.getElementById(id)) {
+          const s = document.createElement('style');
+          s.id = id;
+          s.textContent = css;
+          document.head.appendChild(s);
+        }
+      }
+
+      const faqWrapper = document.querySelector('.tij-faq-wrapper');
+      const faqItems = document.querySelectorAll('.tij-faq-item');
+
+      if (faqWrapper && faqItems.length > 0) {
+        const sectionObserver = new IntersectionObserver(
+          (entries) => {
             entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
-              }
+              if (entry.isIntersecting) entry.target.classList.add('in-view');
             });
-          }, observerOptions);
+          },
+          { threshold: 0.1, rootMargin: '0px 0px -100px 0px' }
+        );
+        sectionObserver.observe(faqWrapper);
 
-          const elementsToObserve = document.querySelectorAll(
-            ".tij-ss-features, .tij-ss-pricing, .tij-ss-day-card, .tij-ss-info-section"
-          );
-          elementsToObserve.forEach((el) => ssObserver.observe(el));
+        ensureStyle('tij-ripple-style', `
+          @keyframes tijRippleExpand { to { transform: scale(4); opacity: 0; } }
+          .tij-ripple-elm { position: absolute; border-radius: 50%; pointer-events: none; transform: scale(0); animation: tijRippleExpand 0.6s ease-out; background: rgba(255,255,255,0.5); }
+        `);
 
-          // ----- Parallax: consolidated update (used by both ATeam and SS modules) -----
-          let ticking = false;
-          function updateParallax() {
-            const scrolled =
-              window.pageYOffset || document.documentElement.scrollTop;
+        faqItems.forEach((item) => {
+          const question = item.querySelector('.tij-faq-question');
+          if (!question) return;
 
-            // grid pattern
-            const grid = document.querySelector(".tij-ss-grid-pattern");
-            if (grid)
-              grid.style.transform = `translate(${scrolled * 0.1}px, ${
-                scrolled * 0.1
-              }px)`;
-
-            // kanji backgrounds for SS
-            const kanjis = document.querySelectorAll(".tij-ss-kanji-bg");
-            if (kanjis.length) {
-              kanjis.forEach((kanji, index) => {
-                const speed = 0.05 * (index + 1);
-                kanji.style.transform = `translateY(${scrolled * speed}px)`;
-              });
-            }
-
-            // floating-kanji used in ATeam module too
-            const floatingKanjis = document.querySelectorAll(".floating-kanji");
-            if (floatingKanjis.length) {
-              floatingKanjis.forEach((kanji, index) => {
-                const speed = 0.5 + index * 0.1;
-                kanji.style.transform = `translateY(${
-                  scrolled * speed * 0.1
-                }px)`;
-              });
-            }
-
-            ticking = false;
-          }
-
-          function requestTick() {
-            if (!ticking) {
-              window.requestAnimationFrame(updateParallax);
-              ticking = true;
-            }
-          }
-          window.addEventListener("scroll", requestTick);
-
-          // ----- Mouse move effects: Japanese accents (SS) -----
-          document.addEventListener("mousemove", (e) => {
-            const mouseX = e.clientX / window.innerWidth;
-            const mouseY = e.clientY / window.innerHeight;
-
-            const accents = document.querySelectorAll(".tij-ss-day-japanese");
-            if (accents.length) {
-              accents.forEach((accent, index) => {
-                const speed = 10;
-                const x = (mouseX - 0.5) * speed * (index % 2 === 0 ? 1 : -1);
-                const y = (mouseY - 0.5) * speed * (index % 2 === 0 ? -1 : 1);
-                accent.style.transform = `translate(${x}px, ${y}px)`;
-              });
-            }
+          question.addEventListener('click', function (ev) {
+            toggleFaqItem(item, ev);
           });
 
-          // ----- Day-cards ripple on hover (SS) -----
-          const dayCards = document.querySelectorAll(".tij-ss-day-card");
-          if (dayCards.length) {
-            // ensure cardRipple keyframes inserted once
-            ensureStyle(
-              "tij-cardripple-style",
-              `
-        @keyframes cardRipple {
-          to { transform: translate(-50%, -50%) scale(8); opacity: 0; }
+          item.addEventListener('mousemove', function (e) {
+            const rect = item.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
+            item.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;
+          });
+
+          item.addEventListener('mouseleave', function () {
+            item.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+          });
+        });
+
+        function toggleFaqItem(item, ev) {
+          const isActive = item.classList.contains('tij-active');
+          faqItems.forEach((other) => other.classList.remove('tij-active'));
+          if (!isActive) {
+            item.classList.add('tij-active');
+          }
         }
-      `
-            );
+      }
 
-            dayCards.forEach((card) => {
-              // ensure card is positioned relatively for absolute ripple
-              if (getComputedStyle(card).position === "static")
-                card.style.position = "relative";
-              card.addEventListener("mouseenter", function (e) {
-                const rect = this.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
+      // Team Section
+      const ateamHeader = document.querySelector('.ateam-header');
+      const ateamIntro = document.querySelector('.ateam-intro');
+      const ateamMembers = document.querySelectorAll('.ateam-member');
+      const ateamMessage = document.querySelector('.ateam-message');
 
-                const ripple = document.createElement("div");
-                ripple.style.cssText = `
-            position: absolute;
-            background: radial-gradient(circle, rgba(212,188,140,0.2) 0%, transparent 70%);
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            top: ${y}px;
-            left: ${x}px;
-            transform: translate(-50%, -50%) scale(0);
-            pointer-events: none;
-            z-index: 0;
-            animation: cardRipple 0.8s ease-out forwards;
-          `;
-                this.appendChild(ripple);
-                setTimeout(() => {
-                  if (ripple.parentNode) ripple.remove();
-                }, 800);
-              });
-            });
-          }
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('reveal-active');
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+      );
 
-          // ----- Feature cards initial animation delays -----
-          const featureCards = document.querySelectorAll(
-            ".tij-ss-feature-card"
-          );
-          if (featureCards.length) {
-            featureCards.forEach((card, index) => {
-              card.style.animationDelay = `${index * 0.1}s`;
-            });
-          }
+      if (ateamHeader) revealObserver.observe(ateamHeader);
+      if (ateamIntro) revealObserver.observe(ateamIntro);
+      if (ateamMessage) revealObserver.observe(ateamMessage);
+      ateamMembers.forEach((member) => revealObserver.observe(member));
 
-          // ----- Price cards entrance animation on load -----
-          const priceCards = document.querySelectorAll(".tij-ss-price-card");
-          if (priceCards.length) {
-            priceCards.forEach((card, index) => {
-              card.style.opacity = "0";
-              card.style.transform = "translateY(30px)";
-              setTimeout(() => {
-                card.style.transition =
-                  "all 0.6s cubic-bezier(0.16, 1, 0.3, 1)";
-                card.style.opacity = "1";
-                card.style.transform = "translateY(0)";
-              }, 800 + index * 200);
-            });
-          }
-        })(); // SharedParallaxAndSSModule end
-      }); // DOMContentLoaded
-    </script>
-  </body>
+      ateamMembers.forEach((card) => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = ((y - centerY) / centerY) * -10;
+          const rotateY = ((x - centerX) / centerX) * 10;
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+        });
+      });
+
+      // Particles
+      const particlesContainer = document.getElementById('ateamParticles');
+      if (particlesContainer) {
+        function createParticle() {
+          const particle = document.createElement('div');
+          particle.className = 'particle';
+          particle.style.left = Math.random() * 100 + '%';
+          particle.style.animationDelay = Math.random() * 10 + 's';
+          particlesContainer.appendChild(particle);
+          setTimeout(() => particle.remove(), 20000);
+        }
+        const particleInterval = setInterval(createParticle, 500);
+        for (let i = 0; i < 20; i++) setTimeout(createParticle, i * 200);
+      }
+    });
+  </script>
+</body>
 </html>
