@@ -27,15 +27,24 @@
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    html {
+      overflow-x: hidden;
+      width: 100%;
+    }
+
     body {
       background: var(--color-white);
       overflow-x: hidden;
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
 
     .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 40px;
+      padding: 40px 20px;
+      width: 100%;
     }
 
     .btn {
@@ -93,6 +102,7 @@
       justify-content: space-between;
       align-items: center;
       text-align: center;
+      box-sizing: border-box;
     }
 
     .hero-section .btn {
@@ -112,6 +122,8 @@
       background-color: var(--color-white);
       padding: 80px 20px;
       color: var(--color-black);
+      width: 100%;
+      overflow-x: hidden;
     }
 
     .common-traps-section .main-container {
@@ -122,6 +134,7 @@
       align-items: center;
       gap: 40px;
       flex-wrap: wrap;
+      width: 100%;
     }
 
     .common-traps-section img {
@@ -198,11 +211,14 @@
       width: 100%;
       overflow: hidden;
       min-height: 380px;
+      margin: 0;
+      padding: 0;
     }
 
     .tokyo-image img {
       width: 100%;
       height: 100%;
+      min-height: 380px;
       object-fit: cover;
       display: block;
       position: relative;
@@ -262,6 +278,8 @@
       background-color: var(--color-brown);
       padding: 80px 20px;
       color: var(--color-white);
+      width: 100%;
+      overflow-x: hidden;
     }
 
     .problems-section .main-container {
@@ -272,6 +290,7 @@
       align-items: center;
       gap: 40px;
       flex-wrap: wrap;
+      width: 100%;
     }
 
     .problems-section img {
@@ -339,6 +358,8 @@
       background-color: var(--color-white);
       padding: 80px 20px;
       color: var(--color-green);
+      width: 100%;
+      overflow-x: hidden;
     }
 
     .study-section .main-container {
@@ -349,6 +370,7 @@
       align-items: center;
       gap: 40px;
       flex-wrap: wrap;
+      width: 100%;
     }
 
     .study-section img {
@@ -378,6 +400,8 @@
       background-color: var(--color-green);
       padding: 80px 20px;
       color: var(--color-white);
+      width: 100%;
+      overflow-x: hidden;
     }
 
     .program-features-section .main-container {
@@ -388,6 +412,7 @@
       align-items: center;
       gap: 40px;
       flex-wrap: wrap;
+      width: 100%;
     }
 
     .program-features-section img {
@@ -443,11 +468,15 @@
       background-color: var(--color-white);
       padding: 80px 20px;
       text-align: center;
+      width: 100%;
+      overflow: hidden;
     }
 
     .video-section .container {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 0 20px;
+      width: 100%;
     }
 
     .video-section h2 {
@@ -459,7 +488,9 @@
     .video-wrapper {
       position: relative;
       width: 100%;
+      max-width: 100%;
       padding-top: 56.25%;
+      overflow: hidden;
     }
 
     .video-wrapper iframe {
@@ -479,6 +510,8 @@
       background: linear-gradient(135deg, var(--color-linen) 0%, #c4b693 50%, var(--color-brown) 100%);
       color: var(--color-brown);
       padding: 80px 20px;
+      width: 100%;
+      overflow-x: hidden;
     }
 
     .steps-header {
@@ -592,12 +625,14 @@
     }
 
     /* ==========================================
-       9. SPEAKING SESSIONS SECTION (LIGHT) - ORIGINAL
+       9. SPEAKING SESSIONS SECTION (LIGHT)
     ========================================== */
     .tij-speaking-sessions {
       position: relative;
       padding: 120px 20px 100px;
       background: linear-gradient(180deg, #e8e5df 0%, #f5f1e8 25%, #fff 75%, #f8f9fa 100%);
+      width: 100%;
+      overflow-x: hidden;
     }
 
     .tij-ss-bg-elements {
@@ -989,7 +1024,7 @@
     .tij-ss-kanji-4 { bottom: 5%; left: 20%; }
 
     /* ==========================================
-       10. A-TEAM SECTION (DARK) - ORIGINAL
+       10. A-TEAM SECTION (DARK)
     ========================================== */
     .ateam-section {
       position: relative;
@@ -997,6 +1032,7 @@
       background: var(--color-black);
       overflow: hidden;
       padding: 100px 20px;
+      width: 100%;
     }
 
     .ateam-bg-pattern {
@@ -1462,7 +1498,7 @@
     }
 
     /* ==========================================
-       11. FAQ SECTION (LIGHT) - ORIGINAL
+       11. FAQ SECTION (LIGHT)
     ========================================== */
     .tij-faq-wrapper * {
       margin: 0;
@@ -1477,6 +1513,7 @@
       padding: 80px 20px;
       position: relative;
       overflow: hidden;
+      width: 100%;
     }
 
     .tij-faq-bg-decoration {
@@ -1830,14 +1867,61 @@
     /* ==========================================
        RESPONSIVE DESIGN
     ========================================== */
-    @media (max-width: 768px) {
+    
+    /* Tablet and below */
+    @media (max-width: 1024px) {
+      .container {
+        padding: 30px 20px;
+      }
+
       .hero-section .sub-section {
-        padding: 20px;
-        font-size: 20px;
+        padding: 20px 100px;
+        font-size: 24px;
+      }
+
+      .tij-ss-pricing-wrapper {
+        padding: 50px 30px;
+      }
+
+      .ateam-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+    }
+
+    /* Mobile and small tablets */
+    @media (max-width: 768px) {
+      .hero-section .hero-title {
+        font-size: 1.2rem;
+        left: 20px;
+        top: 15px;
       }
 
       .hero-section .main-text {
         font-size: 2.5rem;
+        top: 25%;
+        -webkit-text-stroke: 1px var(--color-black);
+        padding: 0 20px;
+      }
+
+      .hero-section .sub-section {
+        padding: 20px 30px;
+        font-size: 20px;
+        min-height: 40vh;
+      }
+
+      .tokyo-image {
+        min-height: 300px;
+      }
+
+      .tokyo-image img {
+        min-height: 300px;
+      }
+
+      .caption p {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.95);
+        text-stroke: 0.5px rgba(0, 0, 0, 0.95);
+        padding: 0 15px;
       }
 
       .common-traps-section,
@@ -1849,7 +1933,9 @@
       .tij-speaking-sessions,
       .ateam-section,
       .tij-faq-wrapper {
-        padding: 60px 15px;
+        padding: 50px 20px;
+        width: 100%;
+        overflow-x: hidden;
       }
 
       .common-traps-section .main-container,
@@ -1857,36 +1943,431 @@
       .study-section .main-container,
       .program-features-section .main-container {
         flex-direction: column;
+        gap: 30px;
+      }
+
+      .common-traps-section img,
+      .problems-section img,
+      .study-section img,
+      .program-features-section img {
+        height: 300px;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .common-traps-section .text-container h2,
+      .problems-section .text-container h2,
+      .program-features-section .text-container h2 {
+        font-size: 28px;
+      }
+
+      .common-traps-section .text-container p {
+        font-size: 18px;
+      }
+
+      .common-traps-section li,
+      .problems-section li {
+        font-size: 16px;
+      }
+
+      .study-section .text-container p {
+        font-size: 24px;
+        text-align: center;
       }
 
       .tij-ss-features,
       .ateam-grid {
         grid-template-columns: 1fr;
+        gap: 25px;
       }
 
       .tij-ss-pricing-cards {
         grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .tij-ss-pricing-wrapper {
+        padding: 40px 25px;
       }
 
       .steps-header {
         flex-direction: column;
         align-items: flex-start;
+        gap: 20px;
+      }
+
+      .steps-header h2 {
+        font-size: 32px;
       }
 
       .grid-steps {
         grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .step {
+        padding: 25px;
+      }
+
+      .ateam-title {
+        font-size: clamp(36px, 8vw, 52px);
+      }
+
+      .ateam-subtitle {
+        font-size: clamp(18px, 4vw, 24px);
+      }
+
+      .ateam-intro {
+        padding: 30px 25px;
+      }
+
+      .ateam-intro-text {
+        font-size: 16px;
+      }
+
+      .ateam-image-container {
+        height: 350px;
+      }
+
+      .ateam-info {
+        padding: 25px;
+      }
+
+      .ateam-name {
+        font-size: 28px;
+      }
+
+      .ateam-bio {
+        font-size: 14px;
+        min-height: auto;
+      }
+
+      .ateam-message {
+        padding: 40px 25px;
+      }
+
+      .ateam-message-text {
+        font-size: 18px;
       }
 
       .tij-faq-question {
-        padding: 20px;
+        padding: 20px 18px;
+      }
+
+      .tij-faq-question-text {
+        font-size: 16px;
+      }
+
+      .tij-faq-icon-wrapper {
+        width: 45px;
+        height: 45px;
+      }
+
+      .tij-faq-icon {
+        width: 45px;
+        height: 45px;
+      }
+
+      .tij-faq-answer-content {
+        padding: 0 18px 20px 18px;
+        font-size: 15px;
+      }
+
+      .tij-faq-decoration {
+        font-size: 120px;
+      }
+
+      .tij-ss-title {
+        font-size: clamp(28px, 6vw, 42px);
+      }
+
+      .video-section {
+        padding: 50px 15px;
+      }
+
+      .video-section .container {
+        padding: 0 15px;
+      }
+
+      .video-section h2 {
+        font-size: 1.6rem;
+        padding: 0 10px;
+        margin-bottom: 30px;
+      }
+
+      .video-wrapper {
+        border-radius: 8px;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+      .video-wrapper iframe {
+        border-radius: 8px;
+      }
+    }
+
+    /* Small mobile phones */
+    @media (max-width: 480px) {
+      .hero-section .main-text {
+        font-size: 2rem;
+        -webkit-text-stroke: 0.5px var(--color-black);
+        line-height: 1.2;
+      }
+
+      .hero-section .sub-section {
+        padding: 20px 15px;
+        font-size: 18px;
+        min-height: 45vh;
+      }
+
+      .tokyo-image {
+        min-height: 250px;
+      }
+
+      .tokyo-image img {
+        min-height: 250px;
+      }
+
+      .caption p {
+        font-size: 1.25rem;
+        -webkit-text-stroke: 0px;
+        text-stroke: 0px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+        padding: 0 10px;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+
+      .common-traps-section,
+      .problems-section,
+      .study-section,
+      .program-features-section,
+      .steps-section,
+      .tij-speaking-sessions,
+      .ateam-section,
+      .tij-faq-wrapper {
+        padding: 40px 15px;
+      }
+
+      .common-traps-section img,
+      .problems-section img,
+      .study-section img,
+      .program-features-section img {
+        height: 250px;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .common-traps-section .text-container h2,
+      .problems-section .text-container h2,
+      .program-features-section .text-container h2 {
+        font-size: 24px;
+      }
+
+      .study-section .text-container p {
+        font-size: 20px;
+      }
+
+      .tij-ss-pricing-wrapper {
+        padding: 30px 20px;
+      }
+
+      .tij-ss-price-card {
+        padding: 30px 25px;
+      }
+
+      .tij-ss-price-amount {
+        font-size: 40px;
+      }
+
+      .steps-header h2 {
+        font-size: 28px;
+      }
+
+      .step-title {
+        font-size: 1.15rem;
+      }
+
+      .step-desc {
+        font-size: 0.9rem;
+      }
+
+      .ateam-label {
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      .ateam-label::before,
+      .ateam-label::after {
+        width: 30px;
+      }
+
+      .ateam-title {
+        font-size: 32px;
+      }
+
+      .ateam-subtitle {
+        font-size: 16px;
+      }
+
+      .ateam-intro {
+        padding: 25px 20px;
+      }
+
+      .ateam-intro-text {
+        font-size: 15px;
       }
 
       .ateam-image-container {
         height: 300px;
       }
 
+      .ateam-info {
+        padding: 20px;
+      }
+
+      .ateam-name {
+        font-size: 24px;
+      }
+
+      .ateam-role {
+        font-size: 14px;
+      }
+
+      .ateam-bio {
+        font-size: 13px;
+      }
+
+      .ateam-message {
+        padding: 30px 20px;
+      }
+
+      .ateam-message-text {
+        font-size: 16px;
+      }
+
+      .tij-faq-title {
+        font-size: 32px;
+      }
+
+      .tij-faq-subtitle {
+        font-size: 16px;
+      }
+
+      .tij-faq-question {
+        padding: 18px 15px;
+        flex-wrap: wrap;
+      }
+
+      .tij-faq-question-text {
+        font-size: 15px;
+        padding-right: 10px;
+      }
+
+      .tij-faq-icon-wrapper {
+        width: 40px;
+        height: 40px;
+      }
+
+      .tij-faq-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .tij-faq-answer-content {
+        padding: 0 15px 18px 15px;
+        font-size: 14px;
+      }
+
       .tij-faq-decoration {
-        font-size: 150px;
+        font-size: 100px;
+      }
+
+      .tij-ss-feature-card {
+        padding: 25px 20px;
+      }
+
+      .tij-ss-feature-title {
+        font-size: 16px;
+      }
+
+      .tij-ss-feature-text {
+        font-size: 14px;
+      }
+
+      .video-section {
+        padding: 40px 10px;
+      }
+
+      .video-section .container {
+        padding: 0 10px;
+      }
+
+      .video-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 25px;
+      }
+
+      .video-wrapper {
+        border-radius: 6px;
+      }
+
+      .video-wrapper iframe {
+        border-radius: 6px;
+      }
+    }
+
+    /* Extra small screens */
+    @media (max-width: 360px) {
+      .hero-section .main-text {
+        font-size: 1.75rem;
+      }
+
+      .hero-section .sub-section {
+        font-size: 16px;
+        padding: 20px 10px;
+      }
+
+      .tokyo-image {
+        min-height: 220px;
+      }
+
+      .tokyo-image img {
+        min-height: 220px;
+      }
+
+      .caption p {
+        font-size: 1.1rem;
+      }
+
+      .common-traps-section .text-container h2,
+      .problems-section .text-container h2,
+      .program-features-section .text-container h2 {
+        font-size: 22px;
+      }
+
+      .ateam-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tij-faq-title {
+        font-size: 28px;
+      }
+
+      .video-section {
+        padding: 35px 10px;
+      }
+
+      .video-section .container {
+        padding: 0 5px;
+      }
+
+      .video-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
       }
     }
   </style>
